@@ -1,3 +1,11 @@
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+}
 *,
 ::after,
 ::before {
@@ -17,10 +25,14 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  transition: 0.5s ease;
 }
 
 a {
   text-decoration: none;
+  color: #FFFFFF;
+}
+a:hover {
   color: #FFFFFF;
 }
 
@@ -55,7 +67,7 @@ a {
   width: 100%;
   z-index: 2;
   height: 826px;
-  background-image: url("../img/header.png"), linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%); /* W3C */
+  background-image: url("../img/header.png"), linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
 }
 .hero--footer {
   position: absolute;
@@ -64,6 +76,7 @@ a {
   bottom: 100px;
 }
 .hero--text {
+  width: 100%;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -85,6 +98,9 @@ a {
   margin-top: 20px;
 }
 
+.header * {
+  font-family: "Montserrat";
+}
 .header--scroll {
   border-radius: 50%;
   border: 1px solid #FFFFFF;
@@ -97,6 +113,7 @@ a {
   bottom: -80px;
   margin-left: auto;
   margin-right: auto;
+  animation: MoveUpDown 1s linear infinite;
 }
 .header--scroll > * {
   vertical-align: middle;
@@ -106,6 +123,13 @@ a {
 .nav {
   display: flex;
   gap: 40px;
+}
+.nav > li {
+  margin: auto;
+}
+
+.logo:hover {
+  opacity: 0.5;
 }
 
 .nav--socials {
@@ -121,6 +145,12 @@ a {
   text-align: center;
   vertical-align: center;
   padding-top: 5px;
+}
+.nav--socials .social__button:hover {
+  background: #FFFFFF;
+}
+.nav--socials .social__button:hover path {
+  fill: #000000;
 }
 
 .pin {
