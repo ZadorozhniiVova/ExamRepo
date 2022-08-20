@@ -92,7 +92,7 @@ function initMap() {
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         scrollwheel: false,
       center: {lat: 40.67963895507005, lng:-73.90631436166709},
-      zoom: 14,
+      zoom: 13.5,
         disableDefaultUI: true,
       styles: [
         {
