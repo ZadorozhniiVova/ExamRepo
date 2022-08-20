@@ -1,11 +1,33 @@
 *,
 ::after,
-::before{
+::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.svg+.svg{
+.svg+.svg {
     margin-left: 20px;
-  }
+}
+
+ul li {
+    list-style: none;
+}
+ul li a{
+      color: #7E5AFF;
+
+}
+
+.btn-primary {
+    padding: 11px 34px;
+    background-color: white;
+    color: black;
+    border: 1px solid #2C4058;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+a{
+    text-decoration: none;
+}
