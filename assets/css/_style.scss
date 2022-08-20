@@ -146,7 +146,7 @@ a {
     border: 1px solid $white;
     display: block;
     text-align: center;
-    vertical-align: center;
+    // vertical-align: center;
     padding-top: 5px;
 
     &:hover {
@@ -413,14 +413,7 @@ a {
     }
 
 
-    .body-slider {
-      width: 80%;
-      min-width: 0;
-
-
-
-      .slider__item {
-
+    
     .body-slider{
       width: 1230px;
       min-width: 0;
@@ -504,7 +497,7 @@ a {
 
             &-date {
               margin-bottom: 0;
-
+            }  
         &-text{
           padding: 30px 20px;
           
@@ -682,7 +675,6 @@ a {
   height: 50px;
   z-index: 5;
 }
-=======
 
 
 
@@ -702,8 +694,6 @@ a {
 
 //GOOGLE MAPS
 
-#map {
-  height: 500px;
 
 #map{
   height: 700px;
@@ -796,7 +786,7 @@ a {
   }
 }
 
-.form {
+.form{
   width: 770px;
   height: 450px;
   background: #FFFFFF;
@@ -855,4 +845,3 @@ a {
     }
   }
 
-}
