@@ -109,11 +109,30 @@ a:hover {
   -o-transform: translate(0px, 0);
   opacity: 1;
 }
-.hero--text h2 {
+.hero--text .hero--text-subtitle {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   margin-top: 20px;
+  transform: translate(0px, 120%);
+  -webkit-transform: translate(0px, 120%);
+  -moz-transform: translate(0px, 120%);
+  -ms-transform: translate(0px, 120%);
+  -o-transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0.5s;
+  -webkit-transition: all 0.8s ease 0.5s;
+  -moz-transition: all 0.8s ease 0.5s;
+  -ms-transition: all 0.8s ease 0.5s;
+  -o-transition: all 0.8s ease 0.5s;
+}
+.hero--text .hero--text-subtitle._active {
+  transform: translate(0px, 0);
+  -webkit-transform: translate(0px, 0);
+  -moz-transform: translate(0px, 0);
+  -ms-transform: translate(0px, 0);
+  -o-transform: translate(0px, 0);
+  opacity: 1;
 }
 
 .header * {
@@ -493,6 +512,7 @@ a:hover {
   background: white;
 }
 .main__container-slider .slider .body__slider .slider__item {
+  cursor: pointer;
   min-width: 370px;
   width: 370px;
   height: 514px;
