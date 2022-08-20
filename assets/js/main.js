@@ -3,7 +3,7 @@
 
 $(function () {
 
-  //SKIDER
+  //SДIDER
   $('.body-slider').slick({
     dots: true,
     slidesToShow: 3,
@@ -62,7 +62,7 @@ $("#myForm").validate({
       minlength: 5  
     }
     
-<<<<<<< HEAD
+
     },
   messages: {
     email: {
@@ -75,7 +75,7 @@ $("#myForm").validate({
   },
    
 });
-=======
+
 //GOOGLE MAPS
 var map;
 function initMap() {
@@ -267,4 +267,4 @@ function initMap() {
 
 
     initMap()
->>>>>>> 282053ff9848041742fc293d306bb55e6e2c67ad
+
