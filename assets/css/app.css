@@ -173,6 +173,8 @@ a:hover {
 .nav--socials {
   display: flex;
   gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 .nav--socials .social__button {
   width: 40px;
