@@ -329,14 +329,7 @@ function initMap() {
   BrooklynMarker.setMap(map)
   BrooklynMarker.addListener('onclick', showPnt)
 
-  $('.location__right-text').on('click', () => {
-    document.getElementById("map") as HTMLElement,
-    {
-      center: { lat: -33.8688, lng: 151.2195 },
-      zoom: 13,
-    }
- 
-  })
+
 }
 
 
