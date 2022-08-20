@@ -79,12 +79,7 @@ $(btnForm).on('click', function () {
   btnForm.slideToggle()
 });
 
-$(closeBtn).on('click', function () {
-  console.log("click")
-  btnForm.slideToggle()
-  modalForm.slideToggle()
 
-});
 
 
 
@@ -112,7 +107,12 @@ $("#myForm").validate({
     minlength: jQuery.validator.format("Длина имени должна быть больше 5-ти символов")
   }
   },
+  submitHandler: function() {
+    alert("Валидация успешна!");
+    btnForm.slideToggle()
+  modalForm.slideToggle()
 
+  }
 });
 
 //GOOGLE MAPS
