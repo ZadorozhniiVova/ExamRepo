@@ -297,6 +297,7 @@ a:hover {
   height: 20px;
   left: 915px;
   top: 1555px;
+  color: black;
 }
 .main .location__left {
   position: absolute;
@@ -360,7 +361,7 @@ a:hover {
 .main__container-slider {
   width: 100%;
   background-image: url(../img/BgSlider.png);
-  background-position: fixed;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 120px 0;
   display: flex;
