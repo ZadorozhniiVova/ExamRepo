@@ -138,6 +138,7 @@ a {
 .container {
   width: 100%;
   max-width: 1170px;
+  height: 1348px;
 }
 
 .title__line {
@@ -178,6 +179,23 @@ a {
   width: 630px;
   left: 215px;
   top: 1074px;
+}
+
+.text {
+  position: absolute;
+  width: 470px;
+  height: 350px;
+  left: 915px;
+  top: 1225px;
+}
+
+.image2 {
+  position: absolute;
+  width: 630px;
+  height: 470px;
+  left: 755px;
+  top: 1778px;
+  margin-bottom: 150px;
 }
 
 .main .main__container-slider {
