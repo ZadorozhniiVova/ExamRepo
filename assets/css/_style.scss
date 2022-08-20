@@ -1,20 +1,20 @@
 *,
 ::after,
-<<<<<<< HEAD
+
 ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 
-=======
+
 ::before{
     margin:0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     transition: 0.5s ease;
->>>>>>> 282053ff9848041742fc293d306bb55e6e2c67ad
+
 }
 
 a {
@@ -175,12 +175,9 @@ a {
 
 
 
-
-<<<<<<< HEAD
 .main {
-
   .main__container-slider {
-=======
+
 .main{
   
   .container {
@@ -327,7 +324,7 @@ a {
 
 
   .main__container-slider{
->>>>>>> 4b342e27b256f0537559c2d734b22f6771c05c45
+
     width: 100%;
     background-image: url(../img/BgSlider.png);
     padding: 120px 0;
@@ -353,22 +350,19 @@ a {
       margin: 30px auto 90px;
     }
 
-<<<<<<< HEAD
+
     .slider {
       max-width: $lg;
       display: flex;
       justify-content: center;
       align-items: center;
 
-=======
     .slider{
       // max-width: $lg;
       display: flex;
       justify-content: center;
       align-items:center;
       position: relative;
-      
->>>>>>> 282053ff9848041742fc293d306bb55e6e2c67ad
 
       .left__arrow,
       .right__arrow{
@@ -417,7 +411,7 @@ a {
       }
 
     }
-<<<<<<< HEAD
+
 
     .body-slider {
       width: 80%;
@@ -426,7 +420,7 @@ a {
 
 
       .slider__item {
-=======
+
     .body-slider{
       width: 1230px;
       min-width: 0;
@@ -434,7 +428,7 @@ a {
 
       .slider__item{
         min-width: 370px;
->>>>>>> 282053ff9848041742fc293d306bb55e6e2c67ad
+
         width: 370px;
         height: 514px;
         display: flex;
@@ -451,7 +445,7 @@ a {
           
         }
 
-<<<<<<< HEAD
+
         &-text {
           padding: 10px;
 
@@ -510,7 +504,7 @@ a {
 
             &-date {
               margin-bottom: 0;
-=======
+
         &-text{
           padding: 30px 20px;
           
@@ -583,7 +577,7 @@ a {
                 color: #55B7FF;
               }
   
->>>>>>> 282053ff9848041742fc293d306bb55e6e2c67ad
+
             }
           }
         }
@@ -690,7 +684,7 @@ a {
 }
 =======
 
->>>>>>> 282053ff9848041742fc293d306bb55e6e2c67ad
+
 
 // .slick-prev,.slick-prev:hover,.slick-prev:focus {
 //   left: -50px;
@@ -707,13 +701,13 @@ a {
 
 
 //GOOGLE MAPS
-<<<<<<< HEAD
+
 #map {
   height: 500px;
-=======
+
 #map{
   height: 700px;
->>>>>>> 282053ff9848041742fc293d306bb55e6e2c67ad
+
   width: 100%;
 }
 
@@ -771,8 +765,7 @@ a {
         }
       }
 
-<<<<<<< HEAD
-=======
+
       &--btn {
         display: flex;
         justify-content: center;
@@ -798,7 +791,7 @@ a {
           }
         }
       }
->>>>>>> 158b088ec7cc3820f4d5b21e94e31eab2e01febe
+
     }
   }
 }
