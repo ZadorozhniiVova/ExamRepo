@@ -25,12 +25,21 @@ $(function(){
 //GOOGLE MAPS
 var map;
 function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-      center: {
-          lat: 23.331400884730492,
-          lng: 114.1726722866911,
-      },
-      zoom: 2,
+  const icons = {
+    pin: {
+      icon: "assets/img/pin.png",
+      size: 16
+    },
+  };
+
+  map = new google.maps.Map(
+      document.getElementById('map'),
+      {
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        scrollwheel: false,
+      center: {lat: 40.67963895507005, lng:-73.90631436166709},
+      zoom: 14,
+        disableDefaultUI: true,
       styles: [
         {
           "elementType": "geometry",
@@ -192,23 +201,22 @@ function initMap() {
         }
       ],
   });
+
   const menu = $("#menu")
-
-  let HongKongPsn = {lat: 22.331400884730492, lng:114.1726722866911};
-
+  let Brooklyn = {lat: 40.67963895507005, lng:-73.90631436166709};
   let showPnt = {
     zoom: 20,
-    center: HongKongPsn
+    center: Brooklyn
   };
 
-  let HongKongMarker = new google.maps.Marker({
-      position: HongKongPsn,
+  let BrooklynMarker = new google.maps.Marker({
+      position: Brooklyn,
       map,
       title: "Hong Kong",
+      icon: icons.pin.icon
     });
-    HongKongMarker.setMap(map)
-
-   HongKongMarker.addListener('onclick', showPnt) 
+  BrooklynMarker.setMap(map)
+  BrooklynMarker.addListener('onclick', showPnt)
 }
 
 
