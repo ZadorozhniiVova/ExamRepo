@@ -30,7 +30,7 @@ function initMap() {
           lat: 23.331400884730492,
           lng: 114.1726722866911,
       },
-      zoom: 2,
+      zoom: 5,
       styles: [
         {
           "elementType": "geometry",

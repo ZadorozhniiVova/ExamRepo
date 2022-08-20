@@ -451,7 +451,17 @@ color: #2C4058;
       max-width: 1170px;
       grid-template-columns: repeat(3,1fr);
       grid-template-rows: repeat(2,214px);
+      margin-bottom: 60px;
 
+      .grid__img{
+        // overflow: hidden;
+        @include transition (0.5s);
+
+        &:hover .grid__img-el{
+          @include resize(1.05);
+          @include border-radius(0.3s);
+        }
+      }
       .grid__img-1{
         grid-row:1/2;
         grid-column: 1/2;
@@ -463,6 +473,24 @@ color: #2C4058;
       .grid__img-5{
         grid-row:2/3;
         grid-column: 3/4;
+      }
+    }
+    .gallery__more{
+      text-decoration: none;
+      border: 1px solid #2C4058;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      color: #000000;
+      padding: 16px 57px;
+      @include transition(0.3s);
+
+      &:hover{
+        @include resize(1.05);
+        @include border-radius(10px);
       }
     }
   }
@@ -496,9 +524,8 @@ color: #2C4058;
 
 //GOOGLE MAPS
 #map{
-  height: 500px;
+  height: 700px;
   width: 100%;
-  margin: 40px 0;
 }
 
 
