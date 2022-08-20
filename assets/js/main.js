@@ -4,7 +4,7 @@
 $(function(){
 
   //SKIDER
-  $('.main__container-slider').slick({
+  $('.body-slider').slick({
     dots: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -14,11 +14,11 @@ $(function(){
   })
 
   $('.left__arrow').click(function(){
-    $('.main__container-slider').slick('slickPrev');
+    $('.body-slider').slick('slickPrev');
   })
   
   $('.right__arrow').click(function(){
-    $('.main__container-slider').slick('slickNext');
+    $('.body-slider').slick('slickNext');
   })
 })
     
