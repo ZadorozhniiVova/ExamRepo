@@ -254,6 +254,19 @@ a {
     left: 215px;
     top: 2092px;
   }
+
+  .button__text {
+    width: 108px;
+    height: 17px;
+    left: 956px;
+    top: 1461px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
   
   .location__right {
     position: absolute;
@@ -270,9 +283,14 @@ a {
     left: 215px;
     top: 2202px;
   }
-  
-  
-  
+
+ .location__right-text { 
+    width: 278px;
+    height: 20px;
+    left: 915px;
+    top: 1555px;
+ } 
+
   .text__subtitle {
     text-transform: uppercase;
     font-family: 'Montserrat';
@@ -308,6 +326,19 @@ a {
     height: 350px;
     left: 215px;
     top: 1872px; 
+  }
+
+  .text__note {
+    width: 470px;
+    height: 81px;
+    left: 915px;
+    top: 1324px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #2C4058;
   }
 
 
