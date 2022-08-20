@@ -3,8 +3,8 @@
 
 $(function () {
 
-  //SДIDER
-  $('.body-slider').slick({
+  //SLIDER
+  $('.body__slider').slick({
     dots: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -14,11 +14,11 @@ $(function () {
   })
 
   $('.left__arrow').click(function () {
-    $('.body-slider').slick('slickPrev');
+    $('.body__slider').slick('slickPrev');
   })
 
   $('.right__arrow').click(function () {
-    $('.body-slider').slick('slickNext');
+    $('.body__slider').slick('slickNext');
   })
 })
 
