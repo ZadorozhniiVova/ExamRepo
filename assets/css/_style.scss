@@ -174,3 +174,58 @@
   width: 100%;
   margin: 40px 0;
 }
+
+
+.footer {
+  &--container {
+    background: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+    background-image: url(../img/backFotter.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 203px 200px;
+
+    .container {
+      &--info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .info {
+          &--logo {
+            margin-right: 369px;
+
+            svg {
+              margin-bottom: 41px;
+            }
+
+            p {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 17px;
+              color: #FFFFFF;
+            }
+          }
+
+          &--icons {
+            @include flex-between;
+
+            .icons {
+              &--svg {
+                cursor: pointer;
+                fill: transparent;
+              }
+
+              &--svg:hover {
+                fill: lightcyan;
+              }
+            }
+
+          }
+        }
+      }
+      &--btn{
+        
+      }
+    }
+  }
+}
