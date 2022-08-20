@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+.svg + .svg {
+  margin-left: 20px;
+}
+
 *,
 ::after,
 ::before {
@@ -149,4 +153,41 @@
   height: 500px;
   width: 100%;
   margin: 40px 0;
+}
+
+.footer--container {
+  background: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+  background-image: url(../img/backFotter.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 203px 200px;
+}
+.footer--container .container--info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer--container .container--info .info--logo {
+  margin-right: 369px;
+}
+.footer--container .container--info .info--logo svg {
+  margin-bottom: 41px;
+}
+.footer--container .container--info .info--logo p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.footer--container .container--info .info--icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer--container .container--info .info--icons .icons--svg {
+  cursor: pointer;
+  fill: transparent;
+}
+.footer--container .container--info .info--icons .icons--svg:hover {
+  fill: lightcyan;
 }/*# sourceMappingURL=app.css.map */
