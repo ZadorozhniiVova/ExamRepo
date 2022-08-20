@@ -166,100 +166,132 @@ a {
     }
 
     .slider{
-      max-width: $lg;
+      // max-width: $lg;
       display: flex;
       justify-content: center;
       align-items:center;
+      position: relative;
       
 
-      // .left__arrow,
-      // .right__arrow{
-      //   width: 40px;
-      // }
+      .left__arrow,
+      .right__arrow{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 50%;
+        z-index:5;
+      }
+
+      .left__arrow{
+        left: -60px;
+      }
+      .right__arrow{
+        right: -60px;
+      }
+
+
+
+
     }
     .body-slider{
-      width: 80%;
+      width: 1230px;
       min-width: 0;
 
-      
-
       .slider__item{
+        min-width: 370px;
         width: 370px;
+        height: 514px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         min-width: 0;
         background-color: white;
-        margin: 10px;
-        padding: 20px;
+        margin: 15px;
+
 
 
         &-img{
           width: 100%;
+          
         }
 
         &-text{
-          padding: 10px;
+          padding: 30px 20px;
           
           
 
           &__title{
             margin-bottom:10px;
-            color: black;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            text-transform: uppercase;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            color: #2C4058;
+            margin-bottom: 15px;
           }
 
           &__text{
             margin-bottom:10px;
-            color: black;
-            font-size: 16px;
-            font-family: Arial, Helvetica, sans-serif;
-            text-transform:initial;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 39px;
 
-            //ОБЯЗАТЕЛЬНО ДЛЯ 3х ТОЧЕК
-            text-overflow: ellipsis;
-            width: 100%;
-            overflow:hidden;
-            white-space:nowrap;
-          }
-        }
-
-        &-author{
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          width: 100%;
-
-          .author__img{
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
-            margin-right: 20px
+            color: #2C4058;
           }
 
-          .author__info{
-            
+          .slider__item-author{
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-
-            &-name{
-              margin-bottom: 0;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+  
+            .author__img{
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -ms-border-radius: 50%;
+              -o-border-radius: 50%;
+              margin-right: 20px
             }
-
-            &-date{
-              margin-bottom: 0;
+  
+            .author__info{
+              
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: center;
+  
+              &-name{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                color: #2C4058;
+                margin-bottom: 0;
+              }
+  
+              &-date{
+                margin-bottom: 0;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #55B7FF;
+              }
+  
             }
-
           }
         }
+
+        
       }
     }
   }
@@ -275,12 +307,7 @@ a {
   display: none;
 }
 
-.left__arrow,
-.right__arrow {
-  width: 50px;
-  height: 50px;
-  z-index:5;
-}
+
 
 // .slick-prev,.slick-prev:hover,.slick-prev:focus {
 //   left: -50px;
