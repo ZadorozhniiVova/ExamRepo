@@ -26,6 +26,29 @@
   margin-left: 20px;
 }
 
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  color: #7E5AFF;
+}
+
+.btn-primary {
+  padding: 11px 34px;
+  background-color: white;
+  color: black;
+  border: 1px solid #2C4058;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
 *,
 ::after,
 ::before {
@@ -174,13 +197,12 @@ a:hover {
   background: #FFFFFF;
 }
 
-.container {
+.main .container {
   width: 100%;
   max-width: 1170px;
   height: 1348px;
 }
-
-.title__line {
+.main .title__line {
   margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 30px;
@@ -190,8 +212,7 @@ a:hover {
   top: 900px;
   border: 1px solid #2C4058;
 }
-
-.title__h2 {
+.main .title__h2 {
   height: 54px;
   left: 638px;
   top: 930px;
@@ -200,17 +221,16 @@ a:hover {
   font-weight: 700;
   font-size: 44px;
   line-height: 54px;
+  text-transform: uppercase;
   text-align: center;
   color: #2C4058;
 }
-
-.trade {
+.main .trade {
   width: 1385px;
   height: 527px;
   left: 0px;
 }
-
-.rectangle__blue {
+.main .rectangle__blue {
   position: absolute;
   width: 585px;
   height: 470px;
@@ -218,8 +238,7 @@ a:hover {
   top: 1074px;
   background: #55B7FF;
 }
-
-.rectangle__purple {
+.main .rectangle__purple {
   position: absolute;
   width: 585px;
   height: 470px;
@@ -227,55 +246,49 @@ a:hover {
   top: 1721px;
   background: #7E5AFF;
 }
-
-.image1 {
+.main .image1 {
   position: absolute;
   width: 630px;
+  height: 470px;
   left: 215px;
   top: 1074px;
 }
-
-.text1 {
+.main .text1 {
   position: absolute;
   width: 470px;
   height: 350px;
   left: 915px;
   top: 1225px;
 }
-
-.button__right {
+.main .button__right {
   position: absolute;
   width: 190px;
   height: 50px;
   left: 915px;
   top: 1445px;
 }
-
-.button__left {
+.main .button__left {
   position: absolute;
   width: 190px;
   height: 50px;
   left: 215px;
   top: 2092px;
 }
-
-.location__right {
+.main .location__right {
   position: absolute;
   width: 278px;
   height: 20px;
   left: 915px;
   top: 1555px;
 }
-
-.location__left {
+.main .location__left {
   position: absolute;
   width: 165px;
   height: 20px;
   left: 215px;
   top: 2202px;
 }
-
-.text__subtitle {
+.main .text__subtitle {
   text-transform: uppercase;
   font-family: "Montserrat";
   font-style: normal;
@@ -284,19 +297,16 @@ a:hover {
   line-height: 27px;
   color: #2C4058;
 }
-
-.text__h2 {
+.main .text__h2 {
   text-transform: uppercase;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
   line-height: 54px;
-  /* identical to box height */
   color: #2C4058;
 }
-
-.image2 {
+.main .image2 {
   position: absolute;
   width: 630px;
   height: 470px;
@@ -304,15 +314,13 @@ a:hover {
   top: 1778px;
   margin-bottom: 150px;
 }
-
-.text2 {
+.main .text2 {
   position: absolute;
   width: 476px;
   height: 350px;
   left: 215px;
   top: 1872px;
 }
-
 .main .main__container-slider {
   width: 100%;
   background-image: url(../img/BgSlider.png);
@@ -570,11 +578,15 @@ a:hover {
   width: 100%;
 }
 
-.footer--container {
+.footer {
   background: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
   background-image: url(../img/backFotter.png);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+}
+.footer--container {
   padding: 203px 200px;
 }
 .footer--container .container--info {
@@ -602,7 +614,87 @@ a:hover {
 .footer--container .container--info .info--icons .icons--svg {
   cursor: pointer;
   fill: transparent;
+  transition: all 0.5s ease;
 }
 .footer--container .container--info .info--icons .icons--svg:hover {
   fill: lightcyan;
+<<<<<<< HEAD
+}
+<<<<<<< HEAD
+.footer--container .container--btn {
+  display: flex;
+  justify-content: center;
+}
+.footer--container .container--btn .btn--form {
+  padding: 10px;
+  border: 2px solid #55B7FF;
+  background-color: #55B7FF;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 54px;
+  text-align: center;
+  color: #2C4058;
+  border-radius: 10px;
+}
+.footer--container .container--btn .btn--form:hover {
+  background-color: #7E5AFF;
+  border-color: #7E5AFF;
+  color: white;
+}
+
+.form {
+  width: 770px;
+  height: 450px;
+  background: #FFFFFF;
+  position: absolute;
+  z-index: 3;
+  left: 25%;
+  top: -50%;
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+}
+.form--closeBtn {
+  height: 1px;
+  width: 100px;
+}
+.form--title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  text-align: center;
+  color: #2C4058;
+  margin-top: 30px;
+  margin-bottom: 42px;
+}
+.form--input {
+  display: flex;
+  justify-content: space-between;
+}
+.form--input li {
+  margin-bottom: 25px;
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #7E5AFF;
+}
+.form--input .input--info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 54px;
+}
+.form--input .input--gg input {
+  border: none;
+  border-bottom: 1px solid #2C4058;
+  margin-bottom: 33px;
+  border-radius: 0;
 }/*# sourceMappingURL=app.css.map */
+=======
+
+/*# sourceMappingURL=app.css.map */
+>>>>>>> 282053ff9848041742fc293d306bb55e6e2c67ad
+=======
+}/*# sourceMappingURL=app.css.map */
+>>>>>>> 4b342e27b256f0537559c2d734b22f6771c05c45
