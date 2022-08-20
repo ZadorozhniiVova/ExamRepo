@@ -53,15 +53,15 @@ $(closeBtn).on('click', function () {
 ///validation 
 $("#myForm").validate({
   rules: {
+   
+    name: {
+      required: true,
+      minlength: 5
+    },
     email: {
       required: true,
       email: true
     },
-    name: {
-      required: true,
-      minlength: 5
-    }
-
   },
   messages: {
     email: {
@@ -72,5 +72,9 @@ $("#myForm").validate({
       minlength: jQuery.validator.format("Длина имени должна быть больше 5-ти символов")
     }
   },
-
+  submitHandler: function() {
+    alert("Валидация успешна!");
+    btnForm.slideToggle()
+  modalForm.slideToggle()
+ }
 });
