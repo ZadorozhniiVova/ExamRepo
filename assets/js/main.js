@@ -201,14 +201,11 @@ function initMap() {
         }
       ],
   });
-
-  const menu = $("#menu")
   let Brooklyn = {lat: 40.67963895507005, lng:-73.90631436166709};
   let showPnt = {
-    zoom: 20,
+    zoom: 13.5,
     center: Brooklyn
   };
-
   let BrooklynMarker = new google.maps.Marker({
       position: Brooklyn,
       map,
