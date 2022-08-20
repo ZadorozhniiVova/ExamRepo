@@ -672,6 +672,9 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+
+  
 
   &__br {
     content: "";
@@ -719,6 +722,8 @@ a {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 214px);
     margin-bottom: 60px;
+    position: relative;
+
 
     .grid__img {
       //overflow: hidden;
@@ -752,13 +757,21 @@ a {
         height: 100%;
         position: absolute;
         @include flexCenter;
+        opacity:0;
+        @include transition(0.3s);
+        cursor: pointer;
+      }
+
+      &:hover .grid__zoom{
+        opacity:1;
+        z-index:2;
       }
     }
   
     
 
     .grid__img-1 {
-      grid-row: 1/2;
+      grid-row: 1/3;
       grid-column: 1/2;
     }
 
@@ -771,8 +784,10 @@ a {
       grid-row: 2/3;
       grid-column: 3/4;
     }
-  }
 
+    
+  }
+  
   .gallery__more {
     text-decoration: none;
     border: 1px solid #2C4058;
@@ -791,9 +806,48 @@ a {
       @include border-radius(10px);
     }
   }
+
+  
 }
 
+.modal__body{
+  position: absolute;
+  @include resize(2.0);
+  z-index:5;
+  border: 2px solid black;
+  @include transition(1s);
+  box-shadow:-3px 5px 15px #000;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: white;
 
+  .modal__img{
+    width:100%;
+    height:auto;
+    max-height: 40vh;
+    opacity:1;
+  }
+
+  .modalClose{
+    width:30px;
+    height: 30px;
+    position: absolute;
+    z-index:10;
+    top:10px;
+    right: 10px;
+    cursor:pointer;
+
+    & path{
+      opacity: 0.7;
+      @include transition(0.3s);
+      &:hover{
+        opacity:1;
+      }
+    }
+
+    
+  }
+}
 .footer {
   background: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
   background-image: url(../img/backFotter.png);

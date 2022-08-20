@@ -2,6 +2,7 @@
 
 //HEADER
 
+
 const animItems = document.querySelectorAll('._anim-items');
 
 if(animItems.length>0){
@@ -11,7 +12,7 @@ if(animItems.length>0){
       const animItem = animItems[index];
       const animItemHeight = animItem.offsetHeight;
       const animItemOffset = offset(animItem).top;
-      const animStart = 4;
+      const animStart = 9;
 
       let animItemPoint = window.innerHeight - animItemHeight / animStart;
       if(animItemHeight > window.innerHeight){
@@ -59,6 +60,63 @@ $(function () {
   $('.right__arrow').click(function () {
     $('.body__slider').slick('slickNext');
   })
+
+
+
+  $('.grid__img').on('click',  function(event){
+    let target = event.target;
+    let targetSrc = $(target).parent().next().attr('src');  
+    
+
+    if(targetSrc !== undefined){
+      let modal = `<div class="modal__body"><img src='${targetSrc}' class="modal__img"></div>`
+      $('.galery').append(modal)
+      
+      let closeBtn = `<svg class="modalClose" height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z" fill="white"/></svg>`;
+      $('.modal__body').append(closeBtn);
+
+      // $('body').on('click', () => {
+      //   $(".modal__body").remove()
+      // })
+      
+
+    }else{
+      let modal = `<div class="modal__body" ><img src='${$(event.target).next().attr('src')}' class="modal__img"></div>`
+      $('.galery').append(modal)
+
+      let closeBtn = `<svg class="modalClose" height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z" fill="white"/></svg>`;
+      $('.modal__body').append(closeBtn);
+
+      
+    }
+    $('.modalClose').on('click', () =>{
+      $(".modal__body").remove()
+    })
+  });
+
+  $(document).mouseup(function (e) {
+    var container = $(".modal__body");
+    if (container.has(e.target).length === 0){
+        container.hide();
+    }
+});
+
+  // $(document).ready(function(){
+  //   $("img").click(function(){
+  //   var t = $(this).attr("src");
+  //   $(".modal-body").html("<img src='"+t+"' class='modal-img'>");
+  //   $("#myModal").modal();
+  // });
+  
+  // $("video").click(function(){
+  //   var v = $("video > source");
+  //   var t = v.attr("src");
+  //   $(".modal-body").html("<video class='model-vid' controls><source src='"+t+"' type='video/mp4'></source></video>");
+  //   $("#myModal").modal();  
+  // });
+  // });
+
+  
 })
 
 
