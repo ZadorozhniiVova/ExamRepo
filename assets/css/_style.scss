@@ -12,29 +12,30 @@
 
 .main{
   
-  .main__container{
+  .main__container-slider{
     width: 100%;
-    background-color: lightblue;
+    background-image: url(../img/BgSlider.png);
+    padding: 120px 0;
 
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content: center;
 
-    &-br{
+    &__br{
       content:"";
       width: 100px;
       border-bottom: 2px solid white;
       display: block;
     }
 
-    &-title{
+    &__title{
       font-family: Arial, Helvetica, sans-serif;
       text-transform: uppercase;
       font-size: 40px;
       font-weight: 700;
       color: white;
-      margin: 40px 0;
+      margin: 30px auto 90px;
     }
 
     .slider{
@@ -42,21 +43,21 @@
       display: flex;
       justify-content: center;
       align-items:center;
-      background-image: url(../img/BgSlider.png)
+      
 
       // .left__arrow,
       // .right__arrow{
       //   width: 40px;
       // }
     }
-    &-slider{
+    .body-slider{
       width: 80%;
       min-width: 0;
 
       
 
       .slider__item{
-        width: 200px;
+        width: 370px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
