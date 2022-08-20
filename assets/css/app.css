@@ -135,6 +135,51 @@ a {
   background: #FFFFFF;
 }
 
+.container {
+  width: 100%;
+  max-width: 1170px;
+}
+
+.title__line {
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  width: 100px;
+  height: 0px;
+  left: 750px;
+  top: 900px;
+  border: 1px solid #2C4058;
+}
+
+.title__h2 {
+  height: 54px;
+  left: 638px;
+  top: 930px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  text-align: center;
+  color: #2C4058;
+}
+
+.rectangle__blue {
+  position: absolute;
+  width: 585px;
+  height: 470px;
+  left: 0px;
+  top: 1074px;
+  background: #55B7FF;
+}
+
+.image1 {
+  position: absolute;
+  width: 630px;
+  left: 215px;
+  top: 1074px;
+}
+
 .main .main__container-slider {
   width: 100%;
   background-image: url(../img/BgSlider.png);
@@ -306,6 +351,4 @@ a {
 }
 .footer--container .container--info .info--icons .icons--svg:hover {
   fill: lightcyan;
-}
-
-/*# sourceMappingURL=app.css.map */
+}/*# sourceMappingURL=app.css.map */
