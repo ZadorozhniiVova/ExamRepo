@@ -30,13 +30,13 @@
   border-bottom: 2px solid white;
   display: block;
 }
-.main .main__container-slider_title {
+.main .main__container-slider__title {
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 700;
   color: white;
-  margin: 40px 0;
+  margin: 30px auto 90px;
 }
 .main .main__container-slider .slider {
   max-width: 1170px;
@@ -49,7 +49,7 @@
   min-width: 0;
 }
 .main .main__container-slider .body-slider .slider__item {
-  width: 200px;
+  width: 370px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
