@@ -534,7 +534,7 @@ color: #2C4058;
         @include transition (0.5s);
 
         &:hover .grid__img-el{
-          @include resize(1.05);
+          @include resize(0.98);
           @include border-radius(0.3s);
         }
       }
