@@ -334,6 +334,16 @@ a {
   margin-bottom: 60px;
   padding: 16px 41px;
   border: 1px solid #2C4058;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.projects .trade__container .trade__right-btn:hover {
+  background-color: rgb(85, 183, 255);
+  color: white;
+  border: 1px solid white;
 }
 .projects .trade__container .trade__right .psn {
   display: flex;
@@ -416,6 +426,16 @@ a {
   margin-bottom: 60px;
   padding: 16px 41px;
   border: 1px solid #2C4058;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.projects .commerce__container .commerce__left-btn:hover {
+  background-color: rgb(126, 90, 255);
+  color: white;
+  border: 1px solid white;
 }
 .projects .commerce__container .commerce__left .psn {
   display: flex;
@@ -443,7 +463,6 @@ a {
 }
 
 .main__container-slider {
-  height: 100vh;
   width: 100vw;
   background-image: url(../img/city.png);
   background-size: cover;
