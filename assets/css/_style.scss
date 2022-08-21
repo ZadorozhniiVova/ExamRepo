@@ -22,7 +22,10 @@ a {
   text-decoration: none;
   color: $white;
 
-  
+  :hover {
+    transform: scale(1.05);
+    transition: 0.5s ease;
+  }
 }
 
 .hero {
@@ -166,6 +169,12 @@ a {
 
   >li {
     margin: auto;
+  }
+
+  &__link {
+    &:hover {
+      color: #2C4058;
+    }
   }
 }
 
@@ -464,7 +473,7 @@ a {
       width: 40px;
       height: 40px;
       position: absolute;
-      top: 50%;
+      top: 40%;
       z-index: 5;
       cursor: pointer;
       overflow: visible;
@@ -508,18 +517,27 @@ a {
     .left__arrow {
       left: -60px;  
 
+      @include media(1400px){
+        left:-45px
+      }
     }
 
     .right__arrow {
       right: -60px;
-     
+      @include media(1400px){
+        right:-45px
+      }
      
     }
 
 
     .body__slider {
-      width: 1230px;
+      width: 1200px;
       min-width: 0;
+
+      // @include media(1400px){
+      //   width:1000px;
+      // }
 
       .slick-list{
         margin-bottom: 40px;
@@ -529,9 +547,9 @@ a {
       }
       .slick-dots {
         text-align: center;
-        display: flex; // поставить кнопки в ряд
-        justify-content: center; // выровнять по центру
-        list-style: none; // убираем черные маркеры
+        display: flex; 
+        justify-content: center;
+        list-style: none; 
       }
       .slick-dots li button:before {
         content: "";
@@ -539,13 +557,13 @@ a {
       }
 
       .slick-dots button {
-        background: transparent; // цвет фона
-        border: 1px solid white; // без рамки
-        border-radius: 50%; // радиус закругления
-        height: 10px; // высота точки
-        width: 10px; // ширина точки
-        margin: 0; // отступы между точками
-        outline: none; // убираем обводку
+        background: transparent; 
+        border: 1px solid white; 
+        border-radius: 50%; 
+        height: 10px;
+        width: 10px;
+        margin: 0; 
+        outline: none; 
       } 
       .slick-dots li[class="slick-active"] button {
         background: white;
@@ -553,7 +571,7 @@ a {
 
       .slider__item {
         cursor: pointer;
-        min-width: 370px;
+        min-width: 370px; 
         width: 370px;
         height: 514px;
         display: flex;
@@ -582,13 +600,6 @@ a {
           width:100%;
           
         }
-        
-        
-
-        
-
-        
-
 
         &-text {
           padding: 30px 20px;
@@ -611,6 +622,8 @@ a {
             line-height: 25px;
             color: #2C4058;
             margin:15px 0 40px;
+
+
 
           }
         }
@@ -745,11 +758,11 @@ a {
       -ms-transform: translate(0px,120%);
       -o-transform: translate(0px,120%);
       opacity: 0;
-      transition: all 0.8s ease 0s   ;
-      -webkit-transition: all 0.8s ease 0s   ;
-      -moz-transition: all 0.8s ease 0s   ;
-      -ms-transition: all 0.8s ease 0s   ;
-      -o-transition: all 0.8s ease 0s   ;
+      transition: all 1s ease 0s   ;
+      -webkit-transition: all 1s ease 0s   ;
+      -moz-transition: all 1s ease 0s   ;
+      -ms-transition: all 1s ease 0s   ;
+      -o-transition: all 1s ease 0s   ;
       &:hover .grid__img-el{
         @include resize(0.98);
         @include border-radius(0.3s);

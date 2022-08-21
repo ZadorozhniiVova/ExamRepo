@@ -54,6 +54,28 @@ $(function () {
     slidesToScroll: 1,
     arrows: true,
     accessibility: true,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    speed: 2000,
+    responsive: [
+      {
+        breakpoint: 1140,
+        settings: {
+          arrows: false,
+          // centerMode: true,
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          slidesToShow: 1
+        }
+      }
+    ]
 
   })
 

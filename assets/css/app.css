@@ -6,6 +6,14 @@
   box-sizing: border-box;
 }
 
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 5px;
+  }
+}
 *,
 ::after,
 ::before {
@@ -30,6 +38,10 @@
 a {
   text-decoration: none;
   color: #FFFFFF;
+}
+a :hover {
+  transform: scale(1.05);
+  transition: 0.5s ease;
 }
 
 .hero {
@@ -147,8 +159,7 @@ a {
   bottom: -80px;
   margin-left: auto;
   margin-right: auto;
-  -webkit-animation: MoveUpDown 1s linear infinite;
-          animation: MoveUpDown 1s linear infinite;
+  animation: MoveUpDown 1s linear infinite;
 }
 .header--scroll > * {
   vertical-align: middle;
@@ -161,6 +172,9 @@ a {
 }
 .nav > li {
   margin: auto;
+}
+.nav__link:hover {
+  color: #2C4058;
 }
 
 .logo:hover {
@@ -417,7 +431,7 @@ a {
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   z-index: 5;
   cursor: pointer;
   overflow: visible;
@@ -477,11 +491,21 @@ a {
 .main__container-slider .slider .left__arrow {
   left: -60px;
 }
+@media screen and (max-width: 1400px) {
+  .main__container-slider .slider .left__arrow {
+    left: -45px;
+  }
+}
 .main__container-slider .slider .right__arrow {
   right: -60px;
 }
+@media screen and (max-width: 1400px) {
+  .main__container-slider .slider .right__arrow {
+    right: -45px;
+  }
+}
 .main__container-slider .slider .body__slider {
-  width: 1230px;
+  width: 1200px;
   min-width: 0;
 }
 .main__container-slider .slider .body__slider .slick-list {
@@ -671,11 +695,11 @@ a {
   -ms-transform: translate(0px, 120%);
   -o-transform: translate(0px, 120%);
   opacity: 0;
-  transition: all 0.8s ease 0s;
-  -webkit-transition: all 0.8s ease 0s;
-  -moz-transition: all 0.8s ease 0s;
-  -ms-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
+  transition: all 1s ease 0s;
+  -webkit-transition: all 1s ease 0s;
+  -moz-transition: all 1s ease 0s;
+  -ms-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
 }
 .main__container-galery .galery__grid .grid__img:hover .grid__img-el {
   transform: scale(0.98);
@@ -773,6 +797,7 @@ a {
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
   box-shadow: -3px 5px 15px #000;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   background-color: white;
 }
@@ -946,4 +971,6 @@ ul li {
 
 a {
   text-decoration: none;
-}/*# sourceMappingURL=app.css.map */
+}
+
+/*# sourceMappingURL=app.css.map */
