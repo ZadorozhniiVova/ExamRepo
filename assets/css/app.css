@@ -845,12 +845,8 @@ ul li {
   list-style: none;
 }
 
-ul li a {
+.check {
   color: #7E5AFF;
-}
-
-ul li a:hover {
-  color: #240b82;
 }
 
 .icons--svg {
