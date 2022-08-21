@@ -179,7 +179,6 @@ $("#myForm").validate({
     }
   },
   submitHandler: function () {
-    alert("Валидация успешна!");
     btnForm.slideToggle()
     modalForm.slideToggle()
 
