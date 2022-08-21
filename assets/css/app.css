@@ -173,6 +173,9 @@ a :hover {
 .nav > li {
   margin: auto;
 }
+.nav__link:hover {
+  color: #2C4058;
+}
 
 .logo:hover {
   opacity: 0.5;

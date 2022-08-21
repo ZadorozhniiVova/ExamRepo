@@ -170,6 +170,12 @@ a {
   >li {
     margin: auto;
   }
+
+  &__link {
+    &:hover {
+      color: #2C4058;
+    }
+  }
 }
 
 .logo {
