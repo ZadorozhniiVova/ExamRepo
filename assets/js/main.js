@@ -351,48 +351,58 @@ function initMap() {
   );
 
 
- 
-    
-  function addPoint(titleName,lat,long,infoImg,infoText){
-    let infowindow = new google.maps.InfoWindow({
-      content: `<div class="info__window">
-      <img class="info__img" src="${infoImg}">
-      <p class="info__text">${infoText}</p>
-      </div>`,
-    });
+  let infowindowNY = new google.maps.InfoWindow({
+    content: `<div class="info__window">
+    <img class="info__img" src="https://lh5.googleusercontent.com/p/AF1QipO6RCMKBDZdcZ8VZtW4qqtc2Og615KSrg2ckJwE=w408-h501-k-no">
+    <p class="info__text">World Trade Center</p>
+    </div>`,
+  });
 
-    const marker = new google.maps.Marker({
-      position: {
-        lat: lat,
-        lng: long
-      },
+  const markerNY  = new google.maps.Marker({
+    position: {
+      lat: 40.71275611373065,
+      lng: -74.01338425969676
+    },
+    map,
+    title: `World Trade Center`,
+    icon: icons.pin.icon
+  });
+  markerNY.addListener('click', () => {
+    infowindowNY.open({
+      anchor: markerNY,
       map,
-      title: `${titleName}`,
-      icon: icons.pin.icon
+      shouldFocus: false,
     });
-    marker.addListener('click', () => {
-      infowindow.open({
-        anchor: marker,
-        map,
-        shouldFocus: false,
-      });
-    })
+  })
 
-    marker.on('click', () => {
-      infowindow.open({
-        anchor: marker,
-        map,
-        shouldFocus: false,
-      });
-    })
 
-    
-  };
 
-   
-  addPoint("World Trade Center",40.71275611373065,-74.01338425969676,"https://lh5.googleusercontent.com/p/AF1QipO6RCMKBDZdcZ8VZtW4qqtc2Og615KSrg2ckJwE=w408-h501-k-no","World Trade Center" );
 
-  addPoint("Hong Kong",22.28453280051697,114.17380099077697,"https://lh5.googleusercontent.com/p/AF1QipPOAdQyvfwTu0f1lTz-9tw14HXOirS7llFxZPn-=w408-h306-k-no","Hong Kong" );
+  let infowindowHK = new google.maps.InfoWindow({
+    content: `<div class="info__window">
+    <img class="info__img" src="https://lh5.googleusercontent.com/p/AF1QipPOAdQyvfwTu0f1lTz-9tw14HXOirS7llFxZPn-=w408-h306-k-no">
+    <p class="info__text">Hong Kong</p>
+    </div>`,
+  });
+
+  const markerHK  = new google.maps.Marker({
+    position: {
+      lat: 22.28453280051697,
+      lng: 114.17380099077697
+    },
+    map,
+    title: `Hong Kong`,
+    icon: icons.pin.icon
+  });
+  markerHK.addListener('click', () => {
+    infowindowHK.open({
+      anchor: markerHK,
+      map,
+      shouldFocus: false,
+    });
+  })
+
+
 
 }
 

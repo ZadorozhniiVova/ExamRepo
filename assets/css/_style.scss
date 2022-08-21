@@ -1222,8 +1222,8 @@ a{
 
 
 .info__window{
-  width: 200px;
-  height:300px;
+  width: fit-content;
+  height:fit-content;
   @include flex-center-column;
 }
 
