@@ -22,7 +22,10 @@ a {
   text-decoration: none;
   color: $white;
 
-  
+  :hover {
+    transform: scale(1.05);
+    transition: 0.5s ease;
+  }
 }
 
 .hero {
@@ -166,6 +169,12 @@ a {
 
   >li {
     margin: auto;
+  }
+
+  &__link {
+    &:hover {
+      color: #2C4058;
+    }
   }
 }
 
