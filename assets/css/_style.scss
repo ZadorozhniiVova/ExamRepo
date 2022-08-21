@@ -1147,7 +1147,7 @@ width: 100vw;
         .info {
           &--logo {
             margin-right: 369px;
-
+            
             svg {
               margin-bottom: 41px;
             }
@@ -1185,6 +1185,8 @@ width: 100vw;
         justify-content: center;
 
         .btn {
+
+          
           &--form {
             padding: 10px;
             border: 2px solid #55B7FF;
@@ -1195,7 +1197,7 @@ width: 100vw;
             text-align: center;
             color: #2C4058;
             border-radius: 10px;
-
+            @include transition(0.3s);
           }
 
           &--form:hover {
@@ -1236,6 +1238,7 @@ width: 100vw;
     color: #2C4058;
     margin-top: 30px;
     margin-bottom: 42px;
+    
   }
 
   &--input {
