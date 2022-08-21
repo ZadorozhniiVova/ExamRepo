@@ -1096,8 +1096,9 @@ a {
   padding: 60px;
 }
 .form--closeBtn {
-  height: 1px;
+  border-top: 1px solid #2C4058;
   width: 100px;
+  align-self: center;
 }
 .form--title {
   font-weight: 700;
