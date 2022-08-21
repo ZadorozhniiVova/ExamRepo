@@ -970,8 +970,9 @@ a {
   padding: 60px;
 
   &--closeBtn {
-    height: 1px;
+    border-top:1px solid #2C4058 ;
     width: 100px;
+    align-self: center;
   }
 
   &--title {

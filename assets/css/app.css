@@ -6,6 +6,15 @@
   box-sizing: border-box;
 }
 
+@-webkit-keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 5px;
+  }
+}
+
 @keyframes MoveUpDown {
   0%, 100% {
     bottom: 0;
@@ -159,7 +168,8 @@ a :hover {
   bottom: -80px;
   margin-left: auto;
   margin-right: auto;
-  animation: MoveUpDown 1s linear infinite;
+  -webkit-animation: MoveUpDown 1s linear infinite;
+          animation: MoveUpDown 1s linear infinite;
 }
 .header--scroll > * {
   vertical-align: middle;
@@ -797,7 +807,6 @@ a :hover {
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
   box-shadow: -3px 5px 15px #000;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   background-color: white;
 }
@@ -903,8 +912,9 @@ a :hover {
   padding: 60px;
 }
 .form--closeBtn {
-  height: 1px;
+  border-top: 1px solid #2C4058;
   width: 100px;
+  align-self: center;
 }
 .form--title {
   font-weight: 700;
@@ -971,6 +981,4 @@ ul li {
 
 a {
   text-decoration: none;
-}
-
-/*# sourceMappingURL=app.css.map */
+}/*# sourceMappingURL=app.css.map */
