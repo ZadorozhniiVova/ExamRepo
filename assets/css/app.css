@@ -264,6 +264,7 @@ a {
 .projects .trade {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 .projects .trade .box--color {
   background: rgb(85, 183, 255);
@@ -281,15 +282,35 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
 }
 .projects .trade__container .trade__left {
   width: 630px;
   min-width: 630px;
   height: 470px;
   margin-right: 70px;
+  transform: translate(-120%, 0);
+  -webkit-transform: translate(-120%, 0);
+  -moz-transform: translate(-120%, 0);
+  -ms-transform: translate(-120%, 0);
+  -o-transform: translate(-120%, 0);
+  opacity: 0;
+  transition: all 1s ease 0.5s;
+  -webkit-transition: all 1s ease 0.5s;
+  -moz-transition: all 1s ease 0.5s;
+  -ms-transition: all 1s ease 0.5s;
+  -o-transition: all 1s ease 0.5s;
 }
 .projects .trade__container .trade__left-img {
   width: 100%;
+}
+.projects .trade__container .trade__left._active {
+  transform: translate(0px, 0);
+  -webkit-transform: translate(0px, 0);
+  -moz-transform: translate(0px, 0);
+  -ms-transform: translate(0px, 0);
+  -o-transform: translate(0px, 0);
+  opacity: 1;
 }
 .projects .trade__container .trade__right {
   display: flex;
@@ -298,6 +319,17 @@ a {
   flex-direction: column;
   width: 476px;
   min-width: 476px;
+  transform: translate(120%, 0);
+  -webkit-transform: translate(120%, 0);
+  -moz-transform: translate(120%, 0);
+  -ms-transform: translate(120%, 0);
+  -o-transform: translate(120%, 0);
+  opacity: 0;
+  transition: all 1s ease 0.5s;
+  -webkit-transition: all 1s ease 0.5s;
+  -moz-transition: all 1s ease 0.5s;
+  -ms-transition: all 1s ease 0.5s;
+  -o-transition: all 1s ease 0.5s;
 }
 .projects .trade__container .trade__right-subtitle {
   font-family: "Montserrat";
@@ -374,9 +406,18 @@ a {
   line-height: 20px;
   color: #000000;
 }
+.projects .trade__container .trade__right._active {
+  transform: translate(0px, 0);
+  -webkit-transform: translate(0px, 0);
+  -moz-transform: translate(0px, 0);
+  -ms-transform: translate(0px, 0);
+  -o-transform: translate(0px, 0);
+  opacity: 1;
+}
 .projects .commerce {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 .projects .commerce .box--color {
   background: rgb(126, 90, 255);
@@ -403,6 +444,17 @@ a {
   margin-right: 70px;
   width: 476px;
   min-width: 476px;
+  transform: translate(-120%, 0);
+  -webkit-transform: translate(-120%, 0);
+  -moz-transform: translate(-120%, 0);
+  -ms-transform: translate(-120%, 0);
+  -o-transform: translate(-120%, 0);
+  opacity: 0;
+  transition: all 1s ease 0.5s;
+  -webkit-transition: all 1s ease 0.5s;
+  -moz-transition: all 1s ease 0.5s;
+  -ms-transition: all 1s ease 0.5s;
+  -o-transition: all 1s ease 0.5s;
 }
 .projects .commerce__container .commerce__left-subtitle {
   font-family: "Montserrat";
@@ -479,13 +531,40 @@ a {
   line-height: 20px;
   color: #000000;
 }
+.projects .commerce__container .commerce__left._active {
+  transform: translate(0px, 0);
+  -webkit-transform: translate(0px, 0);
+  -moz-transform: translate(0px, 0);
+  -ms-transform: translate(0px, 0);
+  -o-transform: translate(0px, 0);
+  opacity: 1;
+}
 .projects .commerce__container .commerce__right {
   width: 630px;
   min-width: 630px;
   height: 470px;
+  transform: translate(120%, 0);
+  -webkit-transform: translate(120%, 0);
+  -moz-transform: translate(120%, 0);
+  -ms-transform: translate(120%, 0);
+  -o-transform: translate(120%, 0);
+  opacity: 0;
+  transition: all 1s ease 0.5s;
+  -webkit-transition: all 1s ease 0.5s;
+  -moz-transition: all 1s ease 0.5s;
+  -ms-transition: all 1s ease 0.5s;
+  -o-transition: all 1s ease 0.5s;
 }
 .projects .commerce__container .commerce__right-img {
   width: 100%;
+}
+.projects .commerce__container .commerce__right._active {
+  transform: translate(0px, 0);
+  -webkit-transform: translate(0px, 0);
+  -moz-transform: translate(0px, 0);
+  -ms-transform: translate(0px, 0);
+  -o-transform: translate(0px, 0);
+  opacity: 1;
 }
 
 .main__container-slider {
@@ -1088,4 +1167,31 @@ ul li {
 
 a {
   text-decoration: none;
+}
+
+.info__window {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#background-video {
+  width: 100%;
+}
+
+.info__text {
+  margin-bottom: 25px;
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #7E5AFF;
 }/*# sourceMappingURL=app.css.map */

@@ -261,6 +261,7 @@ a {
   .trade{
     width: 100%;
     position: relative;
+    overflow: hidden;
 
     .box--color{
       background: rgba(85, 183, 255, 1);
@@ -277,23 +278,57 @@ a {
       margin: 0 auto;
       padding: 60px 0;
       @include flex-between;
+      overflow: hidden;
 
       .trade__left{
         width: 630px;
         min-width: 630px;
         height: 470px;
         margin-right: 70px;
-
+        
+        transform: translate(-120%,0);
+        -webkit-transform: translate(-120%,0);
+        -moz-transform: translate(-120%,0);
+        -ms-transform: translate(-120%,0);
+        -o-transform: translate(-120%,0);
+        opacity: 0;
+        transition: all 1s ease 0.5s   ;
+        -webkit-transition: all 1s ease 0.5s   ;
+        -moz-transition: all 1s ease 0.5s   ;
+        -ms-transition: all 1s ease 0.5s   ;
+        -o-transition: all 1s ease 0.5s   ;
         &-img{
           width: 100%;
+          
         }
+      
+        
+      }
+
+      .trade__left._active{
+        transform: translate(0px,0);
+        -webkit-transform: translate(0px,0);
+        -moz-transform: translate(0px,0);
+        -ms-transform: translate(0px,0);
+        -o-transform: translate(0px,0);
+        opacity: 1;
       }
 
       .trade__right{
         @include flex-left-column;
         width: 476px;
         min-width: 476px;
-
+        transform: translate(120%,0);
+        -webkit-transform: translate(120%,0);
+        -moz-transform: translate(120%,0);
+        -ms-transform: translate(120%,0);
+        -o-transform: translate(120%,0);
+        opacity: 0;
+        transition: all 1s ease 0.5s   ;
+        -webkit-transition: all 1s ease 0.5s   ;
+        -moz-transition: all 1s ease 0.5s   ;
+        -ms-transition: all 1s ease 0.5s   ;
+        -o-transition: all 1s ease 0.5s   ;
         &-subtitle{
           font-family: 'Montserrat';
           font-style: normal;
@@ -372,6 +407,14 @@ a {
 
         }
       }
+      .trade__right._active{
+        transform: translate(0px,0);
+        -webkit-transform: translate(0px,0);
+        -moz-transform: translate(0px,0);
+        -ms-transform: translate(0px,0);
+        -o-transform: translate(0px,0);
+        opacity: 1;
+      }
     }
   }
 
@@ -379,6 +422,7 @@ a {
   .commerce{
     width: 100%;
     position: relative;
+    overflow: hidden;
 
     .box--color{
       background: rgba(126, 90, 255, 1);
@@ -402,6 +446,18 @@ a {
         width: 476px;
         min-width: 476px;
 
+        transform: translate(-120%,0);
+        -webkit-transform: translate(-120%,0);
+        -moz-transform: translate(-120%,0);
+        -ms-transform: translate(-120%,0);
+        -o-transform: translate(-120%,0);
+        opacity: 0;
+        transition: all 1s ease 0.5s   ;
+        -webkit-transition: all 1s ease 0.5s   ;
+        -moz-transition: all 1s ease 0.5s   ;
+        -ms-transition: all 1s ease 0.5s   ;
+        -o-transition: all 1s ease 0.5s   ;
+
         &-subtitle{
           font-family: 'Montserrat';
           font-style: normal;
@@ -480,15 +536,43 @@ a {
         }
       }
 
+      .commerce__left._active{
+        transform: translate(0px,0);
+        -webkit-transform: translate(0px,0);
+        -moz-transform: translate(0px,0);
+        -ms-transform: translate(0px,0);
+        -o-transform: translate(0px,0);
+        opacity: 1;
+      }
+
       .commerce__right{
         width: 630px;
         min-width: 630px;
         height: 470px;
-        
+        transform: translate(120%,0);
+        -webkit-transform: translate(120%,0);
+        -moz-transform: translate(120%,0);
+        -ms-transform: translate(120%,0);
+        -o-transform: translate(120%,0);
+        opacity: 0;
+        transition: all 1s ease 0.5s   ;
+        -webkit-transition: all 1s ease 0.5s   ;
+        -moz-transition: all 1s ease 0.5s   ;
+        -ms-transition: all 1s ease 0.5s   ;
+        -o-transition: all 1s ease 0.5s   ;
 
         &-img{
           width: 100%;
         }
+      }
+
+      .commerce__right._active{
+        transform: translate(0px,0);
+        -webkit-transform: translate(0px,0);
+        -moz-transform: translate(0px,0);
+        -ms-transform: translate(0px,0);
+        -o-transform: translate(0px,0);
+        opacity: 1;
       }
     }
   }
@@ -1133,4 +1217,26 @@ ul li {
 }
 a{
   text-decoration: none;
+}
+
+
+
+.info__window{
+  width: fit-content;
+  height:fit-content;
+  @include flex-center-column;
+}
+
+#background-video{
+  width:100%;
+}
+
+.info__text{
+  margin-bottom: 25px;
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #7E5AFF;
 }
