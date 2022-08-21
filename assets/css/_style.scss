@@ -341,10 +341,21 @@ a {
             color: white;
             border:1px solid white;
           }
+
+          &:focus{
+            background-color: rgba(85, 183, 255, 1);
+            color: white;
+            border:1px solid white;
+          }
+
+          &:active{
+            @include resize(1.05)
+          }
         }
 
         .psn{
           @include flexStart;
+          cursor:pointer;
 
           &__marker{
             margin-right: 10px;
@@ -438,10 +449,20 @@ a {
             color: white;
             border:1px solid white;
           }
+          &:focus{
+            background-color: rgba(126, 90, 255, 1);
+            color: white;
+            border:1px solid white;
+          }
+
+          &:active{
+            @include resize(1.05)
+          }
         }
 
         .psn{
           @include flexStart;
+          cursor:pointer;
 
           &__marker{
             margin-right: 10px;

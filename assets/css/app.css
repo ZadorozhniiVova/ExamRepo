@@ -345,10 +345,23 @@ a {
   color: white;
   border: 1px solid white;
 }
+.projects .trade__container .trade__right-btn:focus {
+  background-color: rgb(85, 183, 255);
+  color: white;
+  border: 1px solid white;
+}
+.projects .trade__container .trade__right-btn:active {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
 .projects .trade__container .trade__right .psn {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  cursor: pointer;
 }
 .projects .trade__container .trade__right .psn__marker {
   margin-right: 10px;
@@ -437,10 +450,23 @@ a {
   color: white;
   border: 1px solid white;
 }
+.projects .commerce__container .commerce__left-btn:focus {
+  background-color: rgb(126, 90, 255);
+  color: white;
+  border: 1px solid white;
+}
+.projects .commerce__container .commerce__left-btn:active {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
 .projects .commerce__container .commerce__left .psn {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  cursor: pointer;
 }
 .projects .commerce__container .commerce__left .psn__marker {
   margin-right: 10px;
