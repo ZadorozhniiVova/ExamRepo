@@ -1167,4 +1167,27 @@ ul li {
 
 a {
   text-decoration: none;
+}
+
+.info__window {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#background-video {
+  width: 100%;
+}
+
+.info__text {
+  margin-bottom: 25px;
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #7E5AFF;
 }/*# sourceMappingURL=app.css.map */

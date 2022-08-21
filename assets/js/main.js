@@ -133,13 +133,19 @@ $(function () {
   $('.trade__right-psn').on('click', () => {
     console.log('click')
     map.setOptions({
-      center: { lat: 40.7174, lng: -73.9883 },
+      center: { lat: 40.71275611373065, lng: -74.01338425969676 },
       zoom: 15,
     });
   })
- 
 
-
+  
+  $('.commerce__left-psn').on('click', () => {
+    console.log('click')
+    map.setOptions({
+      center: { lat: 22.28453280051697, lng: 114.17380099077697 },
+      zoom: 15,
+    });
+  })
 })
 
 
@@ -213,8 +219,8 @@ function initMap() {
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       scrollwheel: false,
       center: {
-        lat: 40.67963895507005,
-        lng: -73.90631436166709
+        lat: 40.71275611373065,
+        lng: -74.01338425969676
       },
       zoom: 13.5,
       disableDefaultUI: true,
@@ -344,43 +350,49 @@ function initMap() {
     }
   );
 
-  const menu = $("#menu")
-  
-  let Brooklyn = {
-    lat: 40.7174,
-    lng: -73.9883
-  };
-  let HongKong = {
-    lat: 22.319719583366293,
-    lng: 114.16900036996392
-  };
-  let NYCity = {
-    lat: 40.71584491027873,
-    lng:-74.01430399860574
 
-  };
-  let showPnt = {
-    zoom: 20,
-    center: Brooklyn
-  };
-
-  let BrooklynMarker = new google.maps.Marker({
-    position: Brooklyn,
-    map,
-    title: "Brooklyn",
-    icon: icons.pin.icon
-  });
-
-  BrooklynMarker.setMap(map)
-  let NYCityMarker = new google.maps.Marker({
-    position: NYCityMarker,
-    map,
-    title: "NYCity",
-    icon: icons.pin.icon
-  });
-  NYCityMarker.setMap(map)
+ 
     
-  
+  function addPoint(titleName,lat,long,infoImg,infoText){
+    let infowindow = new google.maps.InfoWindow({
+      content: `<div class="info__window">
+      <img class="info__img" src="${infoImg}">
+      <p class="info__text">${infoText}</p>
+      </div>`,
+    });
+
+    const marker = new google.maps.Marker({
+      position: {
+        lat: lat,
+        lng: long
+      },
+      map,
+      title: `${titleName}`,
+      icon: icons.pin.icon
+    });
+    marker.addListener('click', () => {
+      infowindow.open({
+        anchor: marker,
+        map,
+        shouldFocus: false,
+      });
+    })
+
+    marker.on('click', () => {
+      infowindow.open({
+        anchor: marker,
+        map,
+        shouldFocus: false,
+      });
+    })
+
+    
+  };
+
+   
+  addPoint("World Trade Center",40.71275611373065,-74.01338425969676,"https://lh5.googleusercontent.com/p/AF1QipO6RCMKBDZdcZ8VZtW4qqtc2Og615KSrg2ckJwE=w408-h501-k-no","World Trade Center" );
+
+  addPoint("Hong Kong",22.28453280051697,114.17380099077697,"https://lh5.googleusercontent.com/p/AF1QipPOAdQyvfwTu0f1lTz-9tw14HXOirS7llFxZPn-=w408-h306-k-no","Hong Kong" );
 
 }
 
