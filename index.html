@@ -33,27 +33,29 @@
 
 <body>
 
+
+<main class="main">
     <header class="header">
         <div class="hero">
             <div class="hero--header">
                 <div>
-                    <a href="#" class="logo"><img src="assets/img/Logo.svg" alt=""></a>
+                    <a href="#" class="logoHover"><img src="assets/img/Logo.svg" alt=""></a>
                 </div>
                 <ul class="nav">
                     <li>
                         <span class="pin"></span>
-                        <a href="">ABOUT US</a>
+                        <a href="#projects" class="nav__link">ABOUT US</a>
                     </li>
                     <li>
                         <span class="pin"></span>
-                        <a href="">PROJECTS</a></li>
+                        <a href="#galery" class="nav__link">PROJECTS</a></li>
                     <li>
                         <span class="pin"></span>
-                        <a href="">NEWS</a>
+                        <a href="#News" class="nav__link">NEWS</a>
                     </li>
                     <li>
                         <span class="pin"></span>
-                        <a href="">CONTACT</a>
+                        <a href="#footer" class="nav__link">CONTACT</a>
                     </li>
                 </ul>
                 <div class="nav--socials">
@@ -86,43 +88,43 @@
             <div class="hero--image">
             </div>
             <div class="hero--text">
-                <h1>
+                <h1 class=" hero--text-title _anim-items">
                     SIMPLE & MODERN
                 </h1>
-                <h2>
+                <h2 class=" hero--text-subtitle _anim-items">
                     WE MAKE THE WORLD BEAUTIFUL EVERYDAY
                 </h2>
             </div>
             <div class="hero--anchors">
                 <div>
-                    <a href="">
+                    <a href="#projects">
                         <span class="pin"></span>
                     </a>
                 </div>
                 <div>
-                    <a href="">
+                    <a href="#News">
                         <span class="pin"></span>
                     </a>
                 </div>
                 <div>
-                    <a href="">
+                    <a href="#galery">
                         <span class="pin"></span>
                     </a>
                 </div>
                 <div>
-                    <a href="">
+                    <a href="#map">
                         <span class="pin"></span>
                     </a>
                 </div>
                 <div>
-                    <a href="">
+                    <a href="#footer">
                         <span class="pin"></span>
                     </a>
                 </div>
             </div>
             <div class="hero--footer d-flex d-flex__justify--center w-100">
                 <div class="text-center p-relative w-100 h-100">
-                    <a class="header--scroll" href="#">
+                    <a class="header--scroll" href="#projects">
                         <svg width="9" height="6" viewBox="0 0 9 6" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -133,87 +135,75 @@
                 </div>
             </div>
         </div>
-</header>
-<main class="main">
+    </header>
+    <div id="projects" class="projects">
+        <span class="projects__br"></span>
+        <h2 class="projects__title _anim-items">
+            WHAT WE DO
+        </h2>
 
-
-
-
-    <section class="what__we__do container">
-        <div class="title">
-            <hr class="title__line">
-            <h2 class="title__h2">What We Do</h2>
+        <div class="projects__trade trade">
+            <div class="box--color"></div> 
+              <div class="trade__container">
+                    <div class="trade__container-left trade__left _anim-items">
+                        <img class="trade__left-img " src="./assets/img/trade.png" alt="">
+                    </div>
+                    <div class="trade__container-right trade__right _anim-items">
+                        <p class="trade__right-subtitle">
+                            ONE WORLD
+                        </p>
+                        <h2 class="trade__right-title">
+                            TRADE CENTER
+                        </h2>
+                        <p class="trade__right-text">
+                            Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.
+                        </p>
+                        <a class=" trade__right-btn" href="#">
+                            MORE DETAILS
+                        </a>
+                        <a href="#map" class="trade__right-psn psn">
+                            <img class="psn__marker" src="./assets/img/marker.png" alt="marker">
+                            <span class="psn__name">
+                                New York City, United States - 1776 feet 
+                            </span>
+                        </a>
+                    </div>
+              </div>
         </div>
-        <div class="container__content">
-            <div class="content__trade"> 
-                <div class="rectangle__blue"></div>
-                <div class="image1">
-                    <img src="./assets/img/trade.png" alt="">
+
+        <div class="projects__commerce commerce">
+            <div class="box--color"></div>
+            <div class="commerce__container">
+                <div class="commerce__container-left commerce__left _anim-items">
+                    <p class="commerce__left-subtitle">
+                        INTERNATIONAL
+                    </p>
+                    <h2 class="commerce__left-title">
+                        COMMERCE CENTRE
+                    </h2>
+                    <p class="commerce__left-text">
+                        Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.
+                    </p>
+                    <a class=" commerce__left-btn" href="#">
+                        MORE DETAILS
+                    </a>
+                    <a href="#map" class="commerce__left-psn psn">
+                        <img class="psn__marker" src="./assets/img/marker.png" alt="marker">
+                        <span class="psn__name">
+                            Hong Kong - 1588 feet
+                        </span>
+                    </a>
                 </div>
-                <div class="info">
-                    <div class="text1">
-                        <h3 class="text__subtitle">One World</h3>
-                        <h2 class="text__h2">Trade Center</h2>
-                        <p class="text__note">Increasing prosperity in our lives can be accomplished
-                            by
-                            having the right frame of mind. The truth is, our thoughts are very
-                            powerful.</p>
-                    </div>
-                    <button class="button__right button" type="submit">
-                        <span class="button__text">MORE DETAILS</span>
-                    </button>
-                    <div class="location location__right">
-                        <svg class="location__sign" width="9" height="14" viewbox="0 0 9 14"
-                            fill="none">
-                            <path
-                                d="M6.42857 4.5C6.42857 5.68025 5.46596 6.64286 4.28571 6.64286C3.10547 6.64286 2.14286 5.68025 2.14286 4.5C2.14286 3.31975 3.10547 2.35714 4.28571 2.35714C5.46596 2.35714 6.42857 3.31975 6.42857 4.5ZM8.57143 4.5C8.57143 2.13114 6.65458 0.214285 4.28571 0.214285C1.91685 0.214285 0 2.13114 0 4.5C0 5.0106 0.0585938 5.53795 0.276228 5.99833L3.33147 12.4771C3.49888 12.8454 3.88393 13.0714 4.28571 13.0714C4.6875 13.0714 5.07254 12.8454 5.24833 12.4771L8.2952 5.99833C8.51284 5.53795 8.57143 5.0106 8.57143 4.5Z"
-                                fill="#2C4058" />
-                        </svg>
-                        <span class="location__right-text">New York City, United States - 1776 feet</span>
-                    </div>
+                <div class="commerce__container-right commerce__right _anim-items">
+                    <img clas="commerce-right-img" src="./assets/img/commerce.png" alt="">
                 </div>
             </div>
         </div>
-
-        <div class="commerce">
-            <div class="left__side">
-                <div class="info">
-                    <div class="text2">
-                        <h3 class="text__subtitle">International</h3>
-                        <h2 class="text__h2">Commerce Center</h2>
-                        <p class="text__note">Successful businesses have many things in common,
-                            today we’ll look
-                            at the big ‘R’ of recognition and how a digital advertising network may
-                            help.</p>
-                    </div>
-                    <button class="button__left button" type="submit">
-                        <span class="button__text">MORE DETAILS</span>
-                    </button>
-                    <div class="location location__left">
-                        <svg class="location__sign" width="9" height="14" viewbox="0 0 9 14"
-                            fill="none">
-                            <path
-                                d="M6.42857 4.5C6.42857 5.68025 5.46596 6.64286 4.28571 6.64286C3.10547 6.64286 2.14286 5.68025 2.14286 4.5C2.14286 3.31975 3.10547 2.35714 4.28571 2.35714C5.46596 2.35714 6.42857 3.31975 6.42857 4.5ZM8.57143 4.5C8.57143 2.13114 6.65458 0.214285 4.28571 0.214285C1.91685 0.214285 0 2.13114 0 4.5C0 5.0106 0.0585938 5.53795 0.276228 5.99833L3.33147 12.4771C3.49888 12.8454 3.88393 13.0714 4.28571 13.0714C4.6875 13.0714 5.07254 12.8454 5.24833 12.4771L8.2952 5.99833C8.51284 5.53795 8.57143 5.0106 8.57143 4.5Z"
-                                fill="#2C4058" />
-                        </svg>
-                        <p class="location__text">Hong Kong - 1588 feet</p>
-                    </div>
-                </div>
-                <div class="rectangle__purple"></div>
-                <div class="image2">
-                    <img src="./assets/img/commerce.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <div class="main__container-slider">
+    </div>
+   
+    <div id="News" class="main__container-slider">
         <span class="main__container-slider__br"></span>
-        <h2 class="main__container-slider__title">
+        <h2 class="main__container-slider__title _anim-items">
             LATEST News
         </h2>
         <div class="slider">
@@ -224,10 +214,11 @@
                     d="M21.8984 17.25C21.8984 17.1797 21.8672 17.1172 21.8203 17.0703L21.4297 16.6797C21.3828 16.6328 21.3125 16.6016 21.25 16.6016C21.1875 16.6016 21.1172 16.6328 21.0703 16.6797L17.4297 20.3203C17.3828 20.3672 17.3516 20.4375 17.3516 20.5C17.3516 20.5625 17.3828 20.6328 17.4297 20.6797L21.0703 24.3203C21.1172 24.3672 21.1875 24.3984 21.25 24.3984C21.3125 24.3984 21.3828 24.3672 21.4297 24.3203L21.8203 23.9297C21.8672 23.8828 21.8984 23.8125 21.8984 23.75C21.8984 23.6875 21.8672 23.6172 21.8203 23.5703L18.75 20.5L21.8203 17.4297C21.8672 17.3828 21.8984 17.3125 21.8984 17.25Z"
                     fill="white" />
             </svg>
-            <div class="body-slider">
-
+            <div class="body__slider">
                 <div class="slider__item">
-                    <img src="./assets/img/slide1.png" alt="" class="slider__item-img">
+                    <div class="slider__img">
+                        <img src="./assets/img/slide1.png" alt="" class="slider__item-img">
+                    </div>
                     <div class="slider__item-text">
                         <h3 class="slider__item-text__title">
                             SEE THE UNMATCHED BEAUTY OF THE GREAT.
@@ -252,7 +243,9 @@
 
                 </div>
                 <div class="slider__item">
-                    <img src="./assets/img/slide2.png" alt="" class="slider__item-img">
+                    <div class="slider__img">
+                        <img src="./assets/img/slide2.png" alt="" class="slider__item-img">
+                    </div>
                     <div class="slider__item-text">
                         <h3 class="slider__item-text__title">
                             EFFECTIVE ADVERTISING POINTERS.
@@ -272,10 +265,12 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="slider__item">
-                    <img src="./assets/img/slide3.png" alt="" class="slider__item-img">
+                    <div class="slider__img">
+                        <img src="./assets/img/slide3.png" alt="" class="slider__item-img">
+                    </div>
+
                     <div class="slider__item-text">
                         <h3 class="slider__item-text__title">
                             HYPNOTIZE YOURSELF INTO THE GHOST.
@@ -298,7 +293,10 @@
 
                 </div>
                 <div class="slider__item">
-                    <img src="./assets/img/slide1.png" alt="" class="slider__item-img">
+                    <div class="slider__img">
+                        <img src="./assets/img/slide1.png" alt="" class="slider__item-img">
+                    </div>
+
                     <div class="slider__item-text">
                         <h3 class="slider__item-text__title">
                             SEE THE UNMATCHED BEAUTY OF THE GREAT.
@@ -322,7 +320,10 @@
 
                 </div>
                 <div class="slider__item">
-                    <img src="./assets/img/slide2.png" alt="" class="slider__item-img">
+                    <div class="slider__img">
+                        <img src="./assets/img/slide2.png" alt="" class="slider__item-img">
+                    </div>
+
                     <div class="slider__item-text">
                         <h3 class="slider__item-text__title">
                             EFFECTIVE ADVERTISING POINTERS.
@@ -344,57 +345,11 @@
                     </div>
 
                 </div>
-                <div class="slider__item">
-                    <img src="./assets/img/slide3.png" alt="" class="slider__item-img">
-                    <div class="slider__item-text">
-                        <h3 class="slider__item-text__title">
-                            HYPNOTIZE YOURSELF INTO THE GHOST.
-                        </h3>
-                        <p class="slider__item-text__text">
-                            There are many things that are important to catalog design...
-                        </p>
-                        <div class="slider__item-author author">
-                            <img src="./assets/img/3.png" alt="" class="author__img">
-                            <div class="author__info">
-                                <p class="author__info-name">
-                                    ALICE WARD
-                                </p>
-                                <p class="author__info-date">
-                                    30 Nov 2019
-                                </p>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-                <div class="slider__item">
-                    <img src="./assets/img/slide1.png" alt="" class="slider__item-img">
-                    <div class="slider__item-text">
-                        <h3 class="slider__item-text__title">
-                            SEE THE UNMATCHED BEAUTY OF THE GREAT.
-                        </h3>
-                        <p class="slider__item-text__text">
-                            Free directories: directories are perfect for customers that are
-                            searching for...
-                        </p>
-                        <div class="slider__item-author author">
-                            <img src="./assets/img/1.png" alt="" class="author__img">
-                            <div class="author__info">
-                                <p class="author__info-name">
-                                    ALJA BRUN
-                                </p>
-                                <p class="author__info-date">
-                                    20 Jan 2020
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
             </div>
             <svg class="right__arrow" width="40" height="40" viewbox="0 0 40 40" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <circle opacity="0.5" cx="20" cy="20" r="19.5" stroke="white" />
+                <circle  cx="20" cy="20" r="19.5" stroke="white" />
                 <path
                     d="M22.6484 20.5C22.6484 20.4375 22.6172 20.3672 22.5703 20.3203L18.9297 16.6797C18.8828 16.6328 18.8125 16.6016 18.75 16.6016C18.6875 16.6016 18.6172 16.6328 18.5703 16.6797L18.1797 17.0703C18.1328 17.1172 18.1016 17.1875 18.1016 17.25C18.1016 17.3125 18.1328 17.3828 18.1797 17.4297L21.25 20.5L18.1797 23.5703C18.1328 23.6172 18.1016 23.6875 18.1016 23.75C18.1016 23.8203 18.1328 23.8828 18.1797 23.9297L18.5703 24.3203C18.6172 24.3672 18.6875 24.3984 18.75 24.3984C18.8125 24.3984 18.8828 24.3672 18.9297 24.3203L22.5703 20.6797C22.6172 20.6328 22.6484 20.5625 22.6484 20.5Z"
                     fill="white" />
@@ -402,32 +357,56 @@
         </div>
 
     </div>
-    <div class="main__container-galery galery">
+    <div id="galery" class="main__container-galery galery">
         <span class="main__container-galery__br"></span>
-        <h2 class="main__container-galery__title">
+        <h2 class="main__container-galery__title _anim-items">
             GALLERY
         </h2>
 
         <div class="galery__grid grid">
-            <div class="grid__img grid__img-1"><img class="grid__img-el"
-                    src="./assets/img/grid1.png"></div>
-            <div class="grid__img grid__img-2"><img class="grid__img-el"
-                    src="./assets/img/grid2.png"></div>
-            <div class="grid__img grid__img-3"><img class="grid__img-el"
-                    src="./assets/img/grid3.png"></div>
-            <div class="grid__img grid__img-4"><img class="grid__img-el"
-                    src="./assets/img/grid4.png"></div>
-            <div class="grid__img grid__img-5"><img class="grid__img-el"
-                    src="./assets/img/grid5.png"></div>
+            <div class="grid__img grid__img-1 _anim-items">
+                <div class="grid__zoom">
+                    <img src="./assets/img/zoom.png" alt="" class="grid__zoom-img">
+                </div>
+                <img class="grid__img-el"
+                    src="./assets/img/grid1.png">
+            </div>
+            <div class="grid__img grid__img-2 _anim-items">
+                <div class="grid__zoom">
+                    <img src="./assets/img/zoom.png" alt="" class="grid__zoom-img">
+                </div>
+                <img class="grid__img-el"
+                    src="./assets/img/grid2.png">
+            </div>
+            <div class="grid__img grid__img-3 _anim-items">
+                <div class="grid__zoom">
+                    <img src="./assets/img/zoom.png" alt="" class="grid__zoom-img">
+                </div>
+                <img class="grid__img-el"
+                    src="./assets/img/grid3.png">
+            </div>
+            <div class="grid__img grid__img-4 _anim-items">
+                <div class="grid__zoom">
+                    <img src="./assets/img/zoom.png" alt="" class="grid__zoom-img">
+                </div>
+                <img class="grid__img-el"
+                    src="./assets/img/grid4.png">
+            </div>
+            <div class="grid__img grid__img-5 _anim-items">
+                <div class="grid__zoom">
+                    <img src="./assets/img/zoom.png" alt="" class="grid__zoom-img">
+                </div>
+                <img class="grid__img-el"
+                    src="./assets/img/grid5.png">
+            </div>
         </div>
 
     </div>
     <div id="map"></div>
-</main>
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <div class="footer--container container">
             <div class="container--form form ">
-                <hr class="form--closeBtn">
+                <div class="form--closeBtn"></div>
                 <div class="form--title">
                     GET IN TOUCH
                 </div>
@@ -441,7 +420,7 @@
                                         fill="#2C4058" />
                                 </svg>
                                 91 Nolan Extensions Suite 670</li>
-                            <li><a href="tel: +001 356-868-2454"><svg width="9" height="14" viewBox="0 0 9 14"
+                            <li><a class="check" href="tel: +001 356-868-2454"><svg width="9" height="14" viewBox="0 0 9 14"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M6.42857 4.5C6.42857 5.68025 5.46596 6.64286 4.28571 6.64286C3.10547 6.64286 2.14286 5.68025 2.14286 4.5C2.14286 3.31975 3.10547 2.35714 4.28571 2.35714C5.46596 2.35714 6.42857 3.31975 6.42857 4.5ZM8.57143 4.5C8.57143 2.13114 6.65458 0.214285 4.28571 0.214285C1.91685 0.214285 0 2.13114 0 4.5C0 5.0106 0.0585938 5.53795 0.276228 5.99833L3.33147 12.4771C3.49888 12.8454 3.88393 13.0714 4.28571 13.0714C4.6875 13.0714 5.07254 12.8454 5.24833 12.4771L8.2952 5.99833C8.51284 5.53795 8.57143 5.0106 8.57143 4.5Z"
@@ -449,7 +428,7 @@
                                     </svg>
                                     +001 356-868-2454</li>
                             </a>
-                            <li><a href="montichello@service.com"><svg width="9" height="14" viewBox="0 0 9 14"
+                            <li><a class="check" href="montichello@service.com"><svg width="9" height="14" viewBox="0 0 9 14"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M6.42857 4.5C6.42857 5.68025 5.46596 6.64286 4.28571 6.64286C3.10547 6.64286 2.14286 5.68025 2.14286 4.5C2.14286 3.31975 3.10547 2.35714 4.28571 2.35714C5.46596 2.35714 6.42857 3.31975 6.42857 4.5ZM8.57143 4.5C8.57143 2.13114 6.65458 0.214285 4.28571 0.214285C1.91685 0.214285 0 2.13114 0 4.5C0 5.0106 0.0585938 5.53795 0.276228 5.99833L3.33147 12.4771C3.49888 12.8454 3.88393 13.0714 4.28571 13.0714C4.6875 13.0714 5.07254 12.8454 5.24833 12.4771L8.2952 5.99833C8.51284 5.53795 8.57143 5.0106 8.57143 4.5Z"
@@ -467,20 +446,20 @@
 
                     </div>
                     <div class="input--gg gg">
-                        <form id="myForm" role="form"></form>
+                        <form id="myForm" role="form">
 
-                        <input type="text" class="form-control" name="name" id="inputName" placeholder="Full Name">
+                        <input type="text" class="form-control" name="name" id="inputName" placeholder="Full Name" required >
 
-                        <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email">
+                        <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email" required>
 
-                        <button type="submit" class="btn-primary">Submit</button>
+                        <button type="submit" class="btn-primary" nsubmit="return false;">Submit</button>
                         </form>
                     </div>
                 </div>
             </div>
             <div class="container--info info">
                 <div class="info--logo logo">
-                    <svg width="241" height="54" viewBox="0 0 241 54" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    <svg  class='logoHover'width="241" height="54" viewBox="0 0 241 54" fill="none" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="241" height="54" fill="url(#pattern0)" />
                         <defs>
@@ -491,7 +470,7 @@
                                 xlink:href="data:image/png;base64,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" />
                         </defs>
                     </svg>
-                    <p>Copyrights © 2020 Montichello</p>
+                    <p class="checkp">Copyrights © 2020 Montichello</p>
                 </div>
                 <div class="info--icons icons">
                     <div class="icons--svg svg">
@@ -531,6 +510,8 @@
 
         </div>
     </footer>
+</main>
+    
 
 
 
