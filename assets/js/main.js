@@ -315,6 +315,15 @@ function initMap() {
     lat: 40.67963895507005,
     lng: -73.90631436166709
   };
+  let HongKong = {
+    lat: 22.319719583366293,
+    lng: 114.16900036996392
+  };
+  let NYCity = {
+    lat: 40.71584491027873,
+    lng:-74.01430399860574
+
+  };
   let showPnt = {
     zoom: 20,
     center: Brooklyn
@@ -323,11 +332,17 @@ function initMap() {
   let BrooklynMarker = new google.maps.Marker({
     position: Brooklyn,
     map,
-    title: "Brooklyb",
+    title: "Brooklyn",
     icon: icons.pin.icon
   });
   BrooklynMarker.setMap(map)
-  BrooklynMarker.addListener('onclick', showPnt)
+  let NYCityMarker = new google.maps.Marker({
+    position: NYCityMarker,
+    map,
+    title: "NYCity",
+    icon: icons.pin.icon
+  });
+  NYCityMarker.setMap(map)
 
 
 }
