@@ -926,21 +926,10 @@ ul li {
   list-style: none;
 }
 
-<<<<<<< HEAD
 .check {
   color: #7E5AFF;
 }
 
-=======
-ul li a {
-  color: #7E5AFF;
-}
-
-ul li a:hover {
-  color: #240b82;
-}
-
->>>>>>> 1ad39c6c5dfb0e638215219b8ac0fddd276149c0
 .icons--svg {
   cursor: pointer;
   fill: transparent;
