@@ -417,7 +417,7 @@ a {
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   z-index: 5;
   cursor: pointer;
   overflow: visible;
@@ -477,11 +477,21 @@ a {
 .main__container-slider .slider .left__arrow {
   left: -60px;
 }
+@media screen and (max-width: 1400px) {
+  .main__container-slider .slider .left__arrow {
+    left: -45px;
+  }
+}
 .main__container-slider .slider .right__arrow {
   right: -60px;
 }
+@media screen and (max-width: 1400px) {
+  .main__container-slider .slider .right__arrow {
+    right: -45px;
+  }
+}
 .main__container-slider .slider .body__slider {
-  width: 1230px;
+  width: 1200px;
   min-width: 0;
 }
 .main__container-slider .slider .body__slider .slick-list {
