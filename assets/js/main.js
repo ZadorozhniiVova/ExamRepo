@@ -46,6 +46,14 @@ if (animItems.length > 0) {
 
 $(function () {
 
+  // $('.main').slick({
+  //   dots: true,
+  //   vertical: true,
+  //   slidesToShow: 2,
+  //   slidesToScroll: 1,
+  //   infinite: false,
+
+  // })
 
   //SLIDER
   $('.body__slider').slick({
