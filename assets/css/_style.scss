@@ -261,6 +261,7 @@ a {
   .trade{
     width: 100%;
     position: relative;
+    overflow: hidden;
 
     .box--color{
       background: rgba(85, 183, 255, 1);
@@ -421,6 +422,7 @@ a {
   .commerce{
     width: 100%;
     position: relative;
+    overflow: hidden;
 
     .box--color{
       background: rgba(126, 90, 255, 1);
@@ -547,7 +549,6 @@ a {
         width: 630px;
         min-width: 630px;
         height: 470px;
-        
         transform: translate(120%,0);
         -webkit-transform: translate(120%,0);
         -moz-transform: translate(120%,0);

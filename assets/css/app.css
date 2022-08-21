@@ -264,6 +264,7 @@ a {
 .projects .trade {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 .projects .trade .box--color {
   background: rgb(85, 183, 255);
@@ -416,6 +417,7 @@ a {
 .projects .commerce {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 .projects .commerce .box--color {
   background: rgb(126, 90, 255);
