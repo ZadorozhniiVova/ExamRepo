@@ -154,20 +154,7 @@ $(function () {
     });
   })
 
-  function changePins(){
-    let pins = $('.pin')
-    let parent = pins.parent().parent().parent().parent().parent()[0].bgColor
-    console.log(parent)
-    if(parent === ""){
-      console.log('white')
-      console.log(pins.length)
-      for(let p = 0; p<pins.length; p++){
-        console.log(pins[p])
-        $(pins[p]).css({"border" :" 1px solid black"})
-      }
-    }
-  }
-  changePins()
+  
 })
 
 
