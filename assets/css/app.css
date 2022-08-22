@@ -77,6 +77,12 @@ a {
   margin: auto 0;
   justify-content: center;
 }
+.hero--anchors.blue .pin {
+  border: 1px solid #7E5AFF;
+}
+.hero--anchors.blue .pin:hover {
+  background: #7E5AFF;
+}
 .hero--image {
   position: absolute;
   width: 100%;
@@ -176,6 +182,9 @@ a {
 .nav {
   display: flex;
   gap: 40px;
+}
+.nav__link:hover {
+  color: #2C4058;
 }
 .nav > li {
   margin: auto;

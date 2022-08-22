@@ -71,6 +71,16 @@ a {
     bottom: 0;
     margin: auto 0;
     justify-content: center;
+
+    &.blue {
+      .pin {
+        border: 1px solid #7E5AFF;
+
+        &:hover {
+          background: #7E5AFF;
+        }
+      }
+    }
   }
 
   &--image {
@@ -183,6 +193,12 @@ a {
 .nav {
   display: flex;
   gap: 40px;
+
+  &__link {
+    &:hover {
+      color: #2C4058;
+    };
+  }
 
   >li {
     margin: auto;
