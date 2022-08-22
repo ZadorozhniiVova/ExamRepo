@@ -46,6 +46,17 @@ if (animItems.length > 0) {
 
 $(function () {
 
+  $('.header').slick({
+    dots: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    arrows: false,
+    autoplaySpeed: 3000,
+    speed: 3000,
+  })
+
   // $('.main').slick({
   //   dots: true,
   //   vertical: true,
@@ -142,18 +153,24 @@ $(function () {
       zoom: 15,
     });
   })
+
+  function changePins(){
+    let pins = $('.pin')
+    let parent = pins.parent().parent().parent().parent().parent()[0].bgColor
+    console.log(parent)
+    if(parent === ""){
+      console.log('white')
+      console.log(pins.length)
+      for(let p = 0; p<pins.length; p++){
+        console.log(pins[p])
+        $(pins[p]).css({"border" :" 1px solid black"})
+      }
+    }
+  }
+  changePins()
 })
 
-$('.header').slick({
-  dots: false,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  infinite: true,
-  autoplay: true,
-  arrows: false,
-  autoplaySpeed: 3000,
-  speed: 3000,
-})
+
 
 
 

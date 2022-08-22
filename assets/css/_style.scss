@@ -7,6 +7,9 @@
   scroll-behavior: smooth;
 }
 
+main{
+  position: relative;
+}
 .test {
   border: none
 }
@@ -37,18 +40,6 @@ a {
   height: 800px;
   width: 100vw;
   position: relative;
-
-  &.orange {
-    .hero--image {
-      background-image: url("../img/header.png"), linear-gradient(243.43deg, #f5860a 16.9%, #55B7FF 83.27%);
-    }
-  }
-
-  &.yellow {
-    .hero--image {
-      background-image: url("../img/header.png"), linear-gradient(243.43deg, #efd111 16.9%, #55B7FF 83.27%);
-    }
-  }
 
   &--header {
     display: flex;
@@ -225,8 +216,9 @@ a {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: 1px solid #FFFFFF;
+  border: 1px solid white;
   display: inline-block;
+  
 }
 
 *:hover {
