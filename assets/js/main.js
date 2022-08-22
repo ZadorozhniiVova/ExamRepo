@@ -152,6 +152,7 @@ $('.header').slick({
   autoplay: true,
   arrows: false,
   autoplaySpeed: 3000,
+  speed: 3000,
 })
 
 $(document).scroll(function () {
@@ -203,36 +204,19 @@ $(btnForm).on('click', function () {
 
 
 ///validation
-$("#myForm").validate({
-  rules: {
-    email: {
-      required: true,
-      email: true
-    },
-    name: {
-      required: true,
-      minlength: 5
-    }
 
 
-  },
-  messages: {
-    email: {
-      required: "Поле email обязательно для заполнения",
-    },
-    name: {
-      required: "Поле имя обязательно для заполнения",
-      minlength: jQuery.validator.format("Длина имени должна быть больше 5-ти символов")
-    }
-  },
-  submitHandler: function () {
-    btnForm.slideToggle()
-    modalForm.slideToggle()
+const inputName = $('#inputName')
+const inputEmail = $('#inputEmail')
 
-  }
+$(closeBtn).on('click',function(){
+console.log('click')
+modalForm.slideToggle()
+  btnForm.slideToggle()
+  inputEmail.val(' ' )
+  inputName.val(' ' )
+})
 
-
-});
 
 //GOOGLE MAPS
 var map;
