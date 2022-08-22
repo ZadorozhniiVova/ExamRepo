@@ -144,6 +144,16 @@ $(function () {
   })
 })
 
+$('.header').slick({
+  dots: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  infinite: true,
+  autoplay: true,
+  arrows: false,
+  autoplaySpeed: 3000,
+})
+
 
 
 
