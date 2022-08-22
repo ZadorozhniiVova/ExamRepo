@@ -152,6 +152,7 @@ $('.header').slick({
   autoplay: true,
   arrows: false,
   autoplaySpeed: 3000,
+  speed: 3000,
 })
 
 
