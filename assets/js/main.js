@@ -191,6 +191,17 @@ modalForm.slideToggle()
   inputEmail.val(' ' )
   inputName.val(' ' )
 })
+function checkParams() {
+  var name = $('#name').val();
+  var email = $('#email').val();
+  var phone = $('#phone').val();
+   
+  if(inputName.length != 0 && inputEmail.length != 0 ) {
+    $('#closeModal').removeAttr('disabled');
+  } else {
+    $('#closeModal').attr('disabled', 'disabled');
+  }
+}
 
 
 //GOOGLE MAPS

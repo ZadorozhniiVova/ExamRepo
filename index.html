@@ -554,12 +554,12 @@
                         <form id="myForm" role="form">
 
                             <input type="text" class="form-control" name="name" id="inputName" placeholder="Your Name"
-                                required>
+                                required minlength="4" onkeyup="checkParams()">
 
                             <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email"
-                                required>
+                                required onkeyup="checkParams()">
 
-                            <button type="button" class="btn-primary" id="closeModal">Submit\Close</button>
+                            <button type="submit" class="btn-primary" id="closeModal" disabled>Submit\Close</button>
                         </form>
                     </div>
                 </div>

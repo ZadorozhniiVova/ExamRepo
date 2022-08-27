@@ -1349,3 +1349,15 @@ a {
   height:15px;
   margin-right: 10px;
 }
+
+
+input:invalid {
+  border: 2px dashed red;
+}
+input:invalid ~.btn-primary{
+display: none;
+}
+
+input:valid {
+  border: 2px solid black;
+}
