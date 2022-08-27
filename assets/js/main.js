@@ -155,6 +155,31 @@ $('.header').slick({
   speed: 3000,
 })
 
+$(document).scroll(function () {
+  const scrollPosition = $(document).scrollTop();
+  const anchors = $('#anchors');
+
+  if (scrollPosition < 550) {
+    anchors.removeClass('blue');
+  }
+
+  if (scrollPosition > 550) {
+    anchors.addClass('blue');
+  }
+
+  if (scrollPosition > 1400) {
+    anchors.removeClass('blue')
+  }
+
+  if (scrollPosition > 3000) {
+    anchors.addClass('blue');
+  }
+
+  if (scrollPosition > 4900) {
+    anchors.removeClass('blue');
+  }
+})
+
 
 
 
