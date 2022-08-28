@@ -49,10 +49,18 @@ $(function () {
   // $('.main').slick({
   //   dots: true,
   //   vertical: true,
-  //   slidesToShow: 2,
+  //   slidesToShow: 7,
   //   slidesToScroll: 1,
-  //   infinite: false,
-
+  //   autoHeight: true,
+  //   slidesPerView: 'auto',
+  //   infinite: true,
+  //   slidesPerGroup: 1,
+  //   pagination:{
+  //     clickable: true,
+  //   }
+  //   // slidesToShow: 5,
+  //   // slidesToScroll: 1,
+  //   // arrow:false,
   // })
 
   //SLIDER
@@ -62,28 +70,10 @@ $(function () {
     slidesToScroll: 1,
     arrows: true,
     accessibility: true,
-    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
     speed: 2000,
-    responsive: [
-      {
-        breakpoint: 1140,
-        settings: {
-          arrows: false,
-          // centerMode: true,
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          slidesToShow: 1
-        }
-      }
-    ]
+
 
   })
 
@@ -133,19 +123,61 @@ $(function () {
   $('.trade__right-psn').on('click', () => {
     console.log('click')
     map.setOptions({
-      center: { lat: 40.71275611373065, lng: -74.01338425969676 },
+      center: {
+        lat: 40.71275611373065,
+        lng: -74.01338425969676
+      },
       zoom: 15,
     });
   })
 
-  
+
   $('.commerce__left-psn').on('click', () => {
     console.log('click')
     map.setOptions({
-      center: { lat: 22.28453280051697, lng: 114.17380099077697 },
+      center: {
+        lat: 22.28453280051697,
+        lng: 114.17380099077697
+      },
       zoom: 15,
     });
   })
+})
+
+$('.header').slick({
+  dots: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  infinite: true,
+  autoplay: true,
+  arrows: false,
+  autoplaySpeed: 3000,
+  speed: 3000,
+})
+
+$(document).scroll(function () {
+  const scrollPosition = $(document).scrollTop();
+  const anchors = $('#anchors');
+
+  if (scrollPosition < 550) {
+    anchors.removeClass('blue');
+  }
+
+  if (scrollPosition > 550) {
+    anchors.addClass('blue');
+  }
+
+  if (scrollPosition > 1400) {
+    anchors.removeClass('blue')
+  }
+
+  if (scrollPosition > 3000) {
+    anchors.addClass('blue');
+  }
+
+  if (scrollPosition > 4900) {
+    anchors.removeClass('blue');
+  }
 })
 
 
@@ -172,36 +204,30 @@ $(btnForm).on('click', function () {
 
 
 ///validation
-$("#myForm").validate({
-  rules: {
-    email: {
-      required: true,
-      email: true
-    },
-    name: {
-      required: true,
-      minlength: 5
-    }
 
 
-  },
-  messages: {
-    email: {
-      required: "Поле email обязательно для заполнения",
-    },
-    name: {
-      required: "Поле имя обязательно для заполнения",
-      minlength: jQuery.validator.format("Длина имени должна быть больше 5-ти символов")
-    }
-  },
-  submitHandler: function () {
-    btnForm.slideToggle()
-    modalForm.slideToggle()
+const inputName = $('#inputName')
+const inputEmail = $('#inputEmail')
 
+$(closeBtn).on('click',function(){
+console.log('click')
+modalForm.slideToggle()
+  btnForm.slideToggle()
+  inputEmail.val(' ' )
+  inputName.val(' ' )
+})
+function checkParams() {
+  var name = $('#name').val();
+  var email = $('#email').val();
+  var phone = $('#phone').val();
+   
+  if(inputName.length != 0 && inputEmail.length != 0 ) {
+    $('#closeModal').removeAttr('disabled');
+  } else {
+    $('#closeModal').attr('disabled', 'disabled');
   }
+}
 
-  
-});
 
 //GOOGLE MAPS
 var map;
@@ -219,8 +245,8 @@ function initMap() {
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       scrollwheel: false,
       center: {
-        lat: 40.71275611373065,
-        lng: -74.01338425969676
+        lat: 40.677866870260345,
+        lng: -73.90085692117088
       },
       zoom: 13.5,
       disableDefaultUI: true,
@@ -358,7 +384,16 @@ function initMap() {
     </div>`,
   });
 
-  const markerNY  = new google.maps.Marker({
+  const markerBr = new google.maps.Marker({
+    position: {
+      lat: 40.677866870260345,
+      lng: -73.90085692117088
+    },
+    map,
+    title: `BROOKLYN`,
+    icon: icons.pin.icon
+  });
+  const markerNY = new google.maps.Marker({
     position: {
       lat: 40.71275611373065,
       lng: -74.01338425969676
@@ -375,9 +410,6 @@ function initMap() {
     });
   })
 
-
-
-
   let infowindowHK = new google.maps.InfoWindow({
     content: `<div class="info__window">
     <img class="info__img" src="https://lh5.googleusercontent.com/p/AF1QipPOAdQyvfwTu0f1lTz-9tw14HXOirS7llFxZPn-=w408-h306-k-no">
@@ -385,7 +417,7 @@ function initMap() {
     </div>`,
   });
 
-  const markerHK  = new google.maps.Marker({
+  const markerHK = new google.maps.Marker({
     position: {
       lat: 22.28453280051697,
       lng: 114.17380099077697
@@ -408,6 +440,3 @@ function initMap() {
 
 
 initMap()
-
-
-
